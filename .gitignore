@@ -218,3 +218,37 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+#---- R --------
+
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+.RData-tmp
+
+# User-specific files (e.g. RStudio preferences)
+.Ruserdata
+
+# OAuth2 token, secret and cookie files
+.httr-oauth
+.Renviron
+
+# RStudio Project Options
+# (Descomenta la siguiente línea si no quieres compartir la configuración de tu proyecto de RStudio)
+# *.Rproj.user
+
+# Kitted/Generated files (Evita subir PDFs o HTMLs pesados si renderizas reportes)
+*.html
+*.pdf
+
+# Packages and library directories
+# If you are using renv or packrat, ignore the local libraries
+.Rproj.user/
+.Rprofile
+renv/library/
+renv/staging/
+renv/local/
