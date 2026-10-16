@@ -17,18 +17,18 @@
 # Inicialmente definimos los paquetes que estaremos utilizando para el análisis de los datos
 
 paquetes <- c(
-  "tidyverse", "janitor", "skimr", "naniar", "scales", "viridis", "lubridate",
-  "fmsb",        # gráficos de radar
-  "wordcloud", "RColorBrewer", "tm",   # nubes de palabras
-  "leaflet", "sf", "spdep",            # mapas y autocorrelación espacial
-  "plotly", "corrplot", "ggplot2",
-  "readxl"
+  "tidyverse","plotly", "corrplot", "ggplot2",
+  "readxl", "janitor", "skimr", "naniar"
 )
 
 # Revisamos todos los paquetes que no se encuentran en la lista y los instalamos
 nuevos <- paquetes[!paquetes %in% rownames(installed.packages())]
 if (length(nuevos) > 0) install.packages(nuevos)
+
+# Con esta linea importamos las librerias en el entorno de trabajo
 invisible(lapply(paquetes, library, character.only = TRUE))
+
+source("analisis/02_graficas.R")
 
 # Creamos las rutas con las salidas de los gráficos y de los datos procesados
 dir.create("salidas/datos",    recursive = TRUE, showWarnings = FALSE)
@@ -60,8 +60,6 @@ datos_raw <- datos_raw %>%
 cat("\n==== Vemos cómo quedó la varaible luego del cambio ====\n")
 print(count(datos_raw, institucion, sort = TRUE))
 
-print(localizacion_instituciones$`Institución educativa`)
-
 # Unimos los datos de las instituciones con los datos de los estudiantes
 datos_unidos <- left_join(
   datos_raw, 
@@ -74,7 +72,8 @@ instituciones_sin_depto <- datos_unidos %>%
   filter(is.na(Departamento)) %>% 
   select(institucion, Departamento)
 
-print(instituciones_sin_depto)
+cat("\n==== Instituciones sin departamento asignado ====\n")
+print(count(instituciones_sin_depto))
 
 
 # Realizamos una descripción inicial de los datos:
@@ -115,6 +114,7 @@ print(count(datos_unidos, asignatura,  sort = TRUE))
 
 # ---- 3. LIMPIEZA Y VARIABLES CLAVE ------------------------------------------
 
+# Austamos los nombres de las asignaturas para que queden iguales
 datos_unidos <- datos_unidos %>% 
   mutate(asignatura = str_replace_all(asignatura, c(
     "Matematicas" = "Matemáticas",
@@ -122,6 +122,8 @@ datos_unidos <- datos_unidos %>%
   )))%>%
   mutate(asignatura = if_else(asignatura == "Histori", "Historia", asignatura))
 
+# Cambiamos los datos faltantes de las calificaciones finales por 0
+datos_unidos <- datos_unidos %>% mutate(calificacion_final = replace_na(calificacion_final, 0))
 
 datos_limpios <- datos_unidos %>%
   distinct() %>%                                         # quita duplicados exactos
@@ -131,11 +133,13 @@ datos_limpios <- datos_unidos %>%
     asistencias = if_else(asistencias <= 1, asistencias * 100, asistencias)
   ) %>%
   filter(
-    !is.na(calificacion_final), !is.na(asistencias),
+    # Omitimos las asignaturas e instituciones sin registros
+    !is.na(asignatura), !is.na(institucion),
+    # Así como las calificaciones y asistencias por fuera del rango esperado
     between(calificacion_final, 0, 5),
     between(asistencias, 0, 100)
   ) %>%
-  # Variables derivadas
+  # Creamos una serie de variables derivadas para futuros análisis
   mutate(
     nivel_desempeno = cut(
       calificacion_final,
@@ -147,7 +151,7 @@ datos_limpios <- datos_unidos %>%
       breaks = c(-Inf, 70, 85, 95, Inf),
       labels = c("Crítica (<70%)", "Baja (70-85%)", "Media (85-95%)", "Alta (>95%)")
     ),
-    aprueba = calificacion_final >= 3.0
+    aprueba = calificacion_final >= 3.0 & asistencias > 80
   )
 
 # Imputación simple de numero_actividades (mediana por asignatura) si hay NA
@@ -159,8 +163,8 @@ datos_limpios <- datos_limpios %>%
   ungroup()
 
 # Variables clave
-vars_clave <- c("id_estudiante", "institucion", "municipio",
-                "asignatura", "periodo", "calificacion_final", "asistencias",
+vars_clave <- c("id_estudiante", "institucion", "Departamento",
+                "asignatura", "calificacion_final", "asistencias",
                 "numero_actividades", "nivel_desempeno", "categoria_asistencia", "aprueba")
 datos_clave <- datos_limpios %>% select(all_of(vars_clave))
 
@@ -192,15 +196,22 @@ resumen_asignatura <- datos_clave %>%
   arrange(desc(media_calif))
 
 resumen_institucion <- datos_clave %>%
-  group_by(institucion, municipio) %>%
+  group_by(institucion, Departamento) %>%
   summarise(n = n(), media_calif = mean(calificacion_final), media_asist = mean(asistencias),
             media_act = mean(numero_actividades), pct_aprueba = mean(aprueba) * 100,
-            lat = first(na.omit(latitud)), lon = first(na.omit(longitud)),
+            .groups = "drop") %>%
+  arrange(desc(media_calif))
+
+resumen_departamento <- datos_clave %>%
+  group_by(Departamento) %>%
+  summarise(n_inst = n(), media_calif = mean(calificacion_final),
+            media_asist = mean(asistencias), pct_aprueba = mean(aprueba) * 100,
             .groups = "drop") %>%
   arrange(desc(media_calif))
 
 cat("\n==== POR ASIGNATURA ====\n");  print(resumen_asignatura)
 cat("\n==== POR INSTITUCIÓN ====\n"); print(resumen_institucion)
+cat("\n==== POR DEPARTAMENTO ====\n"); print(resumen_departamento)
 
 cat("\n==== CORRELACIONES (Pearson y Spearman) ====\n")
 mat_cor <- datos_clave %>% select(calificacion_final, asistencias, numero_actividades)
@@ -215,5 +226,5 @@ dev.off()
 write_csv(datos_clave,         "salidas/datos/datos_limpios.csv")
 write_csv(resumen_institucion, "salidas/datos/resumen_institucion.csv")
 write_csv(resumen_asignatura,  "salidas/datos/resumen_asignatura.csv")
-write_csv(resumen_municipio,   "salidas/datos/resumen_municipio.csv")
+write_csv(resumen_departamento,   "salidas/datos/resumen_departamento.csv")
 saveRDS(datos_clave, "salidas/datos/datos_clave.rds")

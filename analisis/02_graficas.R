@@ -40,11 +40,6 @@ guardar <- function(p, nombre, w = 9, h = 5.5) {
   ggsave(file.path("salidas/graficos", nombre), p, width = w, height = h, dpi = 300)
 }
 
-
-
-
-
-
 # ---- 5. VISUALIZACIONES BÁSICAS ---------------------------------------------
 # 5.1 Gráfico de barras: promedio de calificación por asignatura
 p_barras <- ggplot(resumen_asignatura,
