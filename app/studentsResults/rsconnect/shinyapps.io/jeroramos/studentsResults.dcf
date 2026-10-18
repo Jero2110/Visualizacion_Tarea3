@@ -1,0 +1,12 @@
+name: studentsResults
+title: studentsResults
+username: jeroramos
+account: jeroramos
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 18205461
+bundleId: 12703729
+url: https://jeroramos.shinyapps.io/studentsResults/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

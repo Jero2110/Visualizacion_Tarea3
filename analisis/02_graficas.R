@@ -54,8 +54,9 @@ guardar(p_barras, "02_barras_asignatura.png")
 
 # 5.2 Barras: promedio por institución
 p_barras_inst <- ggplot(resumen_institucion,
-                        aes(x = reorder(institucion, media_calif), y = media_calif, fill = municipio)) +
+                        aes(x = reorder(institucion, media_calif), y = media_calif, fill = Departamento)) +
   geom_col() + coord_flip() +
+  geom_text(aes(label = round(media_calif, 2)), hjust = -0.15, size = 3.5) +
   scale_fill_viridis_d() +
   labs(title = "Calificación promedio por institución", x = NULL,
        y = "Calificación promedio (0-5)", fill = "Municipio") + tema
@@ -104,36 +105,10 @@ guardar(p_disp2, "07_dispersion_actividades.png", w = 11, h = 7)
 modelo <- lm(calificacion_final ~ asistencias + numero_actividades, data = datos_clave)
 cat("\n==== REGRESIÓN LINEAL MÚLTIPLE ====\n"); print(summary(modelo))
 
-# 5.5 Líneas: tendencia por periodo
-tendencia <- datos_clave %>%
-  group_by(periodo) %>%
-  summarise(calificacion_final = mean(calificacion_final), asistencias = mean(asistencias),
-            .groups = "drop") %>%
-  pivot_longer(c(calificacion_final, asistencias), names_to = "indicador", values_to = "valor")
-
-p_lineas <- ggplot(tendencia, aes(periodo, valor, group = 1)) +
-  geom_line(color = "#08519C", linewidth = 1) + geom_point(size = 2.5, color = "#08519C") +
-  facet_wrap(~ indicador, scales = "free_y",
-             labeller = as_labeller(c(calificacion_final = "Calificación promedio (0-5)",
-                                      asistencias = "Asistencia promedio (%)"))) +
-  labs(title = "Tendencia por periodo académico", x = "Periodo", y = NULL) + tema
-guardar(p_lineas, "08_lineas_tendencia.png", w = 11)
-
-# Líneas: tendencia por asignatura
-p_lineas_asig <- datos_clave %>%
-  group_by(periodo, asignatura) %>%
-  summarise(calificacion_final = mean(calificacion_final), .groups = "drop") %>%
-  ggplot(aes(periodo, calificacion_final, color = asignatura, group = asignatura)) +
-  geom_line(linewidth = 0.9) + geom_point() +
-  scale_color_viridis_d() +
-  labs(title = "Evolución de la calificación por asignatura",
-       x = "Periodo", y = "Calificación promedio", color = "Asignatura") + tema
-guardar(p_lineas_asig, "09_lineas_asignatura.png", w = 10)
-
 
 # ---- 6. PATRONES POR ASIGNATURA E INSTITUCIÓN -------------------------------
-# 6.1 Gráfico de radar: perfil de asignaturas de las instituciones (top 4)
-top_inst <- resumen_institucion %>% slice_max(n, n = 4) %>% pull(institucion)
+# 6.1 Gráfico de radar: perfil de asignaturas de las instituciones
+top_inst <- resumen_institucion %>% slice_max(n, n = 5) %>% pull(institucion)
 
 radar_df <- datos_clave %>%
   filter(institucion %in% top_inst) %>%
@@ -199,7 +174,7 @@ p_box_asig <- ggplot(datos_clave, aes(reorder(asignatura, calificacion_final, me
 guardar(p_box_asig, "13_box_asignatura.png")
 
 p_box_inst <- ggplot(datos_clave, aes(reorder(institucion, calificacion_final, median),
-                                      calificacion_final, fill = municipio)) +
+                                      calificacion_final, fill = Departamento)) +
   geom_boxplot(outlier.alpha = 0.3) + coord_flip() + scale_fill_viridis_d() +
   labs(title = "Distribución de calificaciones por institución",
        x = NULL, y = "Calificación", fill = "Municipio") + tema
@@ -216,7 +191,7 @@ p_heat <- datos_clave %>%
   group_by(institucion, asignatura) %>% summarise(media = mean(calificacion_final), .groups = "drop") %>%
   ggplot(aes(asignatura, institucion, fill = media)) +
   geom_tile(color = "white") +
-  geom_text(aes(label = round(media, 1)), size = 3) +
+  geom_text(aes(label = round(media, 1)), size = 3, color = "grey") +
   scale_fill_viridis_c(option = "magma", direction = -1) +
   labs(title = "Calificación promedio: institución x asignatura", x = NULL, y = NULL, fill = "Promedio") +
   tema + theme(axis.text.x = element_text(angle = 45, hjust = 1))
