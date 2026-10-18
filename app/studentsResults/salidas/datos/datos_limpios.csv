@@ -1,0 +1,964 @@
+id_estudiante,institucion,departamento,asignatura,calificacion,asistencia,n_actividades,nivel_desempeno,categoria_asistencia,aprueba
+1,Institución B,Bolívar,Lenguaje,0.2,66,19,Bajo,Crítica (<70%),FALSE
+2,Institución D,Valle Del Cauca,Ciencias,0.3,61,18,Bajo,Crítica (<70%),FALSE
+3,Instituto,Bogotá D.c.,Ciencias,4.5,72,24,Alto,Baja (70-85%),FALSE
+4,Institución E,Antioquia,Historia,0.7,65,23,Bajo,Crítica (<70%),FALSE
+5,Institución B,Bolívar,Ciencias,2.7,52,17,Bajo,Crítica (<70%),FALSE
+6,Institución C,Cesar,Lenguaje,2.1,79,14,Bajo,Baja (70-85%),FALSE
+7,Institución B,Bolívar,Historia,1.7,71,25,Bajo,Baja (70-85%),FALSE
+8,Instituto,Bogotá D.c.,Historia,4.5,58,9,Alto,Crítica (<70%),FALSE
+9,Institución E,Antioquia,Matemáticas,0.1,78,27,Bajo,Baja (70-85%),FALSE
+10,Institución D,Valle Del Cauca,Arte,3.3,96,24,Básico,Alta (>95%),TRUE
+12,Instituto,Bogotá D.c.,Lenguaje,2.8,72,29,Bajo,Baja (70-85%),FALSE
+16,Institución B,Bolívar,Historia,1.3,96,26,Bajo,Alta (>95%),FALSE
+17,Instituto,Bogotá D.c.,Historia,3.7,97,20,Básico,Alta (>95%),TRUE
+19,Institución B,Bolívar,Matemáticas,1.3,94,9,Bajo,Media (85-95%),FALSE
+20,Institución E,Antioquia,Matemáticas,3.3,66,26,Básico,Crítica (<70%),FALSE
+21,Institución A,Atlántico,Lenguaje,1,89,8,Bajo,Media (85-95%),FALSE
+23,Institución A,Atlántico,Ciencias,2.3,51,23,Bajo,Crítica (<70%),FALSE
+24,Institución A,Atlántico,Historia,4.9,86,27,Superior,Media (85-95%),TRUE
+25,Institución C,Cesar,Ciencias,3,55,6,Básico,Crítica (<70%),FALSE
+26,Institución B,Bolívar,Arte,1.7,93,17,Bajo,Media (85-95%),FALSE
+28,Institución A,Atlántico,Matemáticas,0.8,79,26,Bajo,Baja (70-85%),FALSE
+29,Institución C,Cesar,Arte,1.1,71,8,Bajo,Baja (70-85%),FALSE
+31,Institución C,Cesar,Matemáticas,4.3,79,24,Alto,Baja (70-85%),FALSE
+33,Institución E,Antioquia,Lenguaje,2.6,92,19,Bajo,Media (85-95%),FALSE
+34,Institución A,Atlántico,Historia,0.6,81,8,Bajo,Baja (70-85%),FALSE
+35,Institución B,Bolívar,Ciencias,4.3,91,13,Alto,Media (85-95%),TRUE
+36,Institución B,Bolívar,Arte,3.6,63,11,Básico,Crítica (<70%),FALSE
+37,Institución D,Valle Del Cauca,Arte,0.3,59,23,Bajo,Crítica (<70%),FALSE
+38,Institución A,Atlántico,Matemáticas,3.5,96,23,Básico,Alta (>95%),TRUE
+39,Institución B,Bolívar,Historia,2.7,85,10,Bajo,Baja (70-85%),FALSE
+40,Institución A,Atlántico,Lenguaje,0.4,83,10,Bajo,Baja (70-85%),FALSE
+41,Institución E,Antioquia,Lenguaje,2.3,58,24,Bajo,Crítica (<70%),FALSE
+42,Institución B,Bolívar,Ciencias,2.4,91,19,Bajo,Media (85-95%),FALSE
+44,Institución B,Bolívar,Historia,4.7,60,29,Superior,Crítica (<70%),FALSE
+45,Instituto,Bogotá D.c.,Historia,4.2,63,24,Alto,Crítica (<70%),FALSE
+46,Institución C,Cesar,Historia,3.3,88,13,Básico,Media (85-95%),TRUE
+47,Institución A,Atlántico,Lenguaje,2.3,96,8,Bajo,Alta (>95%),FALSE
+48,Institución D,Valle Del Cauca,Historia,2.1,68,22,Bajo,Crítica (<70%),FALSE
+49,Institución B,Bolívar,Matemáticas,3.3,64,22,Básico,Crítica (<70%),FALSE
+50,Instituto,Bogotá D.c.,Arte,2.7,77,9,Bajo,Baja (70-85%),FALSE
+51,Institución D,Valle Del Cauca,Lenguaje,0.3,73,24,Bajo,Baja (70-85%),FALSE
+52,Institución B,Bolívar,Ciencias,2.6,57,27,Bajo,Crítica (<70%),FALSE
+55,Institución D,Valle Del Cauca,Ciencias,0.3,96,26,Bajo,Alta (>95%),FALSE
+57,Institución B,Bolívar,Matemáticas,1,82,16,Bajo,Baja (70-85%),FALSE
+58,Institución B,Bolívar,Ciencias,1.3,68,6,Bajo,Crítica (<70%),FALSE
+59,Institución D,Valle Del Cauca,Lenguaje,0.8,52,17,Bajo,Crítica (<70%),FALSE
+60,Instituto,Bogotá D.c.,Lenguaje,1.7,59,14,Bajo,Crítica (<70%),FALSE
+61,Institución B,Bolívar,Matemáticas,3.8,89,13,Básico,Media (85-95%),TRUE
+62,Institución A,Atlántico,Arte,2.6,96,14,Bajo,Alta (>95%),FALSE
+63,Instituto,Bogotá D.c.,Arte,1,91,11,Bajo,Media (85-95%),FALSE
+64,Institución E,Antioquia,Matemáticas,4.4,50,8,Alto,Crítica (<70%),FALSE
+65,Institución B,Bolívar,Historia,4.4,78,23,Alto,Baja (70-85%),FALSE
+66,Institución E,Antioquia,Matemáticas,4.4,99,14,Alto,Alta (>95%),TRUE
+68,Institución A,Atlántico,Lenguaje,2.3,62,29,Bajo,Crítica (<70%),FALSE
+69,Institución A,Atlántico,Historia,4.9,50,25,Superior,Crítica (<70%),FALSE
+70,Institución A,Atlántico,Ciencias,3.9,83,23,Básico,Baja (70-85%),TRUE
+71,Institución A,Atlántico,Matemáticas,0.1,78,25,Bajo,Baja (70-85%),FALSE
+72,Institución B,Bolívar,Ciencias,0.3,97,6,Bajo,Alta (>95%),FALSE
+73,Institución A,Atlántico,Lenguaje,2.3,96,24,Bajo,Alta (>95%),FALSE
+74,Instituto,Bogotá D.c.,Ciencias,4.5,62,14,Alto,Crítica (<70%),FALSE
+75,Institución A,Atlántico,Ciencias,2.7,97,6,Bajo,Alta (>95%),FALSE
+76,Instituto,Bogotá D.c.,Matemáticas,2.5,98,6,Bajo,Alta (>95%),FALSE
+77,Instituto,Bogotá D.c.,Lenguaje,0.5,78,28,Bajo,Baja (70-85%),FALSE
+78,Institución C,Cesar,Lenguaje,3.3,88,21,Básico,Media (85-95%),TRUE
+79,Institución A,Atlántico,Lenguaje,4.1,73,20,Alto,Baja (70-85%),FALSE
+80,Instituto,Bogotá D.c.,Matemáticas,1.9,75,20,Bajo,Baja (70-85%),FALSE
+81,Institución C,Cesar,Lenguaje,3.9,66,18,Básico,Crítica (<70%),FALSE
+84,Institución E,Antioquia,Historia,2.6,54,15,Bajo,Crítica (<70%),FALSE
+85,Institución B,Bolívar,Arte,1.4,75,28,Bajo,Baja (70-85%),FALSE
+86,Institución A,Atlántico,Ciencias,4,98,5,Alto,Alta (>95%),TRUE
+88,Institución A,Atlántico,Lenguaje,3.2,56,27,Básico,Crítica (<70%),FALSE
+89,Instituto,Bogotá D.c.,Lenguaje,4,98,25,Alto,Alta (>95%),TRUE
+91,Institución A,Atlántico,Lenguaje,4.6,50,11,Superior,Crítica (<70%),FALSE
+93,Institución B,Bolívar,Ciencias,0.8,66,22,Bajo,Crítica (<70%),FALSE
+94,Instituto,Bogotá D.c.,Ciencias,3.5,92,16,Básico,Media (85-95%),TRUE
+96,Institución C,Cesar,Lenguaje,1.6,52,5,Bajo,Crítica (<70%),FALSE
+99,Institución C,Cesar,Ciencias,1.4,92,19,Bajo,Media (85-95%),FALSE
+100,Institución A,Atlántico,Lenguaje,4.9,81,25,Superior,Baja (70-85%),TRUE
+101,Institución C,Cesar,Matemáticas,0.7,75,14,Bajo,Baja (70-85%),FALSE
+102,Institución E,Antioquia,Lenguaje,1,65,11,Bajo,Crítica (<70%),FALSE
+103,Institución C,Cesar,Arte,0.9,74,6,Bajo,Baja (70-85%),FALSE
+104,Institución A,Atlántico,Ciencias,4.5,77,14,Alto,Baja (70-85%),FALSE
+105,Institución E,Antioquia,Ciencias,3.3,58,28,Básico,Crítica (<70%),FALSE
+106,Institución B,Bolívar,Matemáticas,0.8,50,8,Bajo,Crítica (<70%),FALSE
+107,Institución B,Bolívar,Arte,2.2,78,16,Bajo,Baja (70-85%),FALSE
+108,Institución A,Atlántico,Arte,3.1,71,23,Básico,Baja (70-85%),FALSE
+109,Institución C,Cesar,Matemáticas,0.4,65,15,Bajo,Crítica (<70%),FALSE
+110,Institución B,Bolívar,Ciencias,4.4,90,12,Alto,Media (85-95%),TRUE
+111,Institución A,Atlántico,Lenguaje,4,93,22,Alto,Media (85-95%),TRUE
+112,Institución D,Valle Del Cauca,Lenguaje,2.5,90,15,Bajo,Media (85-95%),FALSE
+113,Institución D,Valle Del Cauca,Ciencias,4.8,56,15,Superior,Crítica (<70%),FALSE
+114,Institución E,Antioquia,Lenguaje,2.1,63,17,Bajo,Crítica (<70%),FALSE
+115,Institución B,Bolívar,Lenguaje,4.9,78,7,Superior,Baja (70-85%),FALSE
+116,Institución B,Bolívar,Lenguaje,3.3,68,16,Básico,Crítica (<70%),FALSE
+117,Institución D,Valle Del Cauca,Ciencias,3.2,68,7,Básico,Crítica (<70%),FALSE
+118,Institución B,Bolívar,Lenguaje,0.8,51,14,Bajo,Crítica (<70%),FALSE
+119,Institución C,Cesar,Matemáticas,4.4,90,21,Alto,Media (85-95%),TRUE
+121,Institución B,Bolívar,Lenguaje,0.8,64,6,Bajo,Crítica (<70%),FALSE
+122,Institución A,Atlántico,Lenguaje,0.1,52,21,Bajo,Crítica (<70%),FALSE
+123,Institución E,Antioquia,Lenguaje,2.8,60,20,Bajo,Crítica (<70%),FALSE
+127,Institución A,Atlántico,Arte,0.4,67,10,Bajo,Crítica (<70%),FALSE
+128,Institución B,Bolívar,Ciencias,3.7,97,29,Básico,Alta (>95%),TRUE
+129,Institución A,Atlántico,Historia,0.9,51,14,Bajo,Crítica (<70%),FALSE
+130,Institución A,Atlántico,Matemáticas,4.3,81,14,Alto,Baja (70-85%),TRUE
+131,Institución A,Atlántico,Historia,4.1,57,12,Alto,Crítica (<70%),FALSE
+132,Institución A,Atlántico,Arte,2.7,71,5,Bajo,Baja (70-85%),FALSE
+133,Institución D,Valle Del Cauca,Ciencias,3.6,55,17,Básico,Crítica (<70%),FALSE
+135,Institución C,Cesar,Lenguaje,2.4,96,13,Bajo,Alta (>95%),FALSE
+136,Institución B,Bolívar,Historia,4.1,89,26,Alto,Media (85-95%),TRUE
+138,Instituto,Bogotá D.c.,Ciencias,1.8,64,19,Bajo,Crítica (<70%),FALSE
+139,Institución A,Atlántico,Arte,2.5,77,9,Bajo,Baja (70-85%),FALSE
+140,Institución E,Antioquia,Historia,4.1,98,26,Alto,Alta (>95%),TRUE
+141,Institución A,Atlántico,Ciencias,1.7,94,20,Bajo,Media (85-95%),FALSE
+142,Institución C,Cesar,Historia,0.9,67,17,Bajo,Crítica (<70%),FALSE
+143,Instituto,Bogotá D.c.,Ciencias,3.6,51,26,Básico,Crítica (<70%),FALSE
+145,Instituto,Bogotá D.c.,Ciencias,0.5,94,24,Bajo,Media (85-95%),FALSE
+146,Institución A,Atlántico,Matemáticas,1.2,64,22,Bajo,Crítica (<70%),FALSE
+148,Institución A,Atlántico,Matemáticas,1.7,78,13,Bajo,Baja (70-85%),FALSE
+149,Institución A,Atlántico,Lenguaje,2.3,91,20,Bajo,Media (85-95%),FALSE
+150,Institución D,Valle Del Cauca,Ciencias,3.7,78,6,Básico,Baja (70-85%),FALSE
+151,Institución B,Bolívar,Lenguaje,3.3,52,29,Básico,Crítica (<70%),FALSE
+152,Institución B,Bolívar,Lenguaje,3.1,68,6,Básico,Crítica (<70%),FALSE
+153,Institución C,Cesar,Matemáticas,1.8,52,16,Bajo,Crítica (<70%),FALSE
+154,Institución A,Atlántico,Lenguaje,4.2,63,12,Alto,Crítica (<70%),FALSE
+155,Institución E,Antioquia,Historia,2.4,89,13,Bajo,Media (85-95%),FALSE
+156,Institución A,Atlántico,Ciencias,4.9,53,16,Superior,Crítica (<70%),FALSE
+158,Institución A,Atlántico,Ciencias,0.6,80,14,Bajo,Baja (70-85%),FALSE
+159,Institución A,Atlántico,Arte,3.4,92,29,Básico,Media (85-95%),TRUE
+160,Institución B,Bolívar,Matemáticas,1.6,81,6,Bajo,Baja (70-85%),FALSE
+161,Institución B,Bolívar,Historia,3.4,76,20,Básico,Baja (70-85%),FALSE
+163,Institución B,Bolívar,Historia,0.9,92,11,Bajo,Media (85-95%),FALSE
+164,Institución E,Antioquia,Ciencias,4.3,51,6,Alto,Crítica (<70%),FALSE
+165,Institución A,Atlántico,Historia,1.1,98,5,Bajo,Alta (>95%),FALSE
+166,Institución A,Atlántico,Matemáticas,4.2,58,23,Alto,Crítica (<70%),FALSE
+167,Institución C,Cesar,Matemáticas,1.4,77,8,Bajo,Baja (70-85%),FALSE
+168,Institución B,Bolívar,Matemáticas,3.2,80,28,Básico,Baja (70-85%),FALSE
+169,Institución E,Antioquia,Ciencias,3.5,83,26,Básico,Baja (70-85%),TRUE
+171,Institución B,Bolívar,Matemáticas,1.5,97,29,Bajo,Alta (>95%),FALSE
+172,Institución D,Valle Del Cauca,Matemáticas,1.1,74,18,Bajo,Baja (70-85%),FALSE
+173,Institución B,Bolívar,Ciencias,0.2,85,6,Bajo,Baja (70-85%),FALSE
+174,Instituto,Bogotá D.c.,Lenguaje,1.5,57,19,Bajo,Crítica (<70%),FALSE
+175,Institución A,Atlántico,Ciencias,3.3,58,16,Básico,Crítica (<70%),FALSE
+177,Instituto,Bogotá D.c.,Historia,4.4,97,24,Alto,Alta (>95%),TRUE
+178,Institución E,Antioquia,Lenguaje,3.8,94,11,Básico,Media (85-95%),TRUE
+179,Institución D,Valle Del Cauca,Historia,3.9,88,28,Básico,Media (85-95%),TRUE
+180,Institución B,Bolívar,Historia,3.3,81,25,Básico,Baja (70-85%),TRUE
+183,Institución A,Atlántico,Lenguaje,3.4,86,18,Básico,Media (85-95%),TRUE
+184,Institución A,Atlántico,Ciencias,2.8,68,9,Bajo,Crítica (<70%),FALSE
+186,Institución C,Cesar,Ciencias,2.2,78,28,Bajo,Baja (70-85%),FALSE
+187,Institución D,Valle Del Cauca,Ciencias,2.3,56,18,Bajo,Crítica (<70%),FALSE
+188,Institución D,Valle Del Cauca,Ciencias,4.3,77,6,Alto,Baja (70-85%),FALSE
+189,Institución C,Cesar,Historia,2.7,58,16,Bajo,Crítica (<70%),FALSE
+190,Institución C,Cesar,Matemáticas,1.9,77,26,Bajo,Baja (70-85%),FALSE
+191,Institución C,Cesar,Lenguaje,4.9,55,28,Superior,Crítica (<70%),FALSE
+193,Institución B,Bolívar,Historia,2.1,66,8,Bajo,Crítica (<70%),FALSE
+194,Institución D,Valle Del Cauca,Historia,0.2,65,17,Bajo,Crítica (<70%),FALSE
+195,Institución A,Atlántico,Historia,3.7,72,8,Básico,Baja (70-85%),FALSE
+196,Institución A,Atlántico,Ciencias,4.6,80,26,Superior,Baja (70-85%),FALSE
+197,Instituto,Bogotá D.c.,Historia,1.4,52,18,Bajo,Crítica (<70%),FALSE
+198,Institución B,Bolívar,Matemáticas,4.3,70,20,Alto,Crítica (<70%),FALSE
+199,Institución B,Bolívar,Lenguaje,1.5,75,8,Bajo,Baja (70-85%),FALSE
+200,Instituto,Bogotá D.c.,Matemáticas,4.6,85,28,Superior,Baja (70-85%),TRUE
+201,Institución A,Atlántico,Lenguaje,3.8,91,29,Básico,Media (85-95%),TRUE
+202,Institución A,Atlántico,Arte,4,86,5,Alto,Media (85-95%),TRUE
+203,Institución A,Atlántico,Arte,0.1,71,17,Bajo,Baja (70-85%),FALSE
+204,Institución B,Bolívar,Historia,4.8,91,8,Superior,Media (85-95%),TRUE
+205,Institución B,Bolívar,Matemáticas,3.6,61,24,Básico,Crítica (<70%),FALSE
+206,Institución C,Cesar,Lenguaje,1.5,91,22,Bajo,Media (85-95%),FALSE
+208,Institución A,Atlántico,Arte,1.4,60,7,Bajo,Crítica (<70%),FALSE
+209,Institución D,Valle Del Cauca,Lenguaje,4.4,65,27,Alto,Crítica (<70%),FALSE
+210,Institución A,Atlántico,Matemáticas,0.6,57,17,Bajo,Crítica (<70%),FALSE
+211,Institución B,Bolívar,Ciencias,3.5,89,20,Básico,Media (85-95%),TRUE
+212,Institución A,Atlántico,Matemáticas,2.7,89,9,Bajo,Media (85-95%),FALSE
+213,Institución E,Antioquia,Ciencias,0.5,94,8,Bajo,Media (85-95%),FALSE
+214,Institución E,Antioquia,Lenguaje,1.2,51,25,Bajo,Crítica (<70%),FALSE
+215,Institución B,Bolívar,Matemáticas,0.1,79,12,Bajo,Baja (70-85%),FALSE
+217,Institución A,Atlántico,Lenguaje,1.5,61,18,Bajo,Crítica (<70%),FALSE
+218,Institución C,Cesar,Ciencias,3,59,11,Básico,Crítica (<70%),FALSE
+219,Institución C,Cesar,Lenguaje,1.5,93,18,Bajo,Media (85-95%),FALSE
+221,Institución D,Valle Del Cauca,Matemáticas,3.7,64,16,Básico,Crítica (<70%),FALSE
+222,Instituto,Bogotá D.c.,Arte,0.2,65,20,Bajo,Crítica (<70%),FALSE
+224,Instituto,Bogotá D.c.,Ciencias,4.3,75,17,Alto,Baja (70-85%),FALSE
+225,Institución A,Atlántico,Historia,3.3,51,27,Básico,Crítica (<70%),FALSE
+226,Instituto,Bogotá D.c.,Historia,3,99,18,Básico,Alta (>95%),TRUE
+227,Institución D,Valle Del Cauca,Lenguaje,4.5,61,11,Alto,Crítica (<70%),FALSE
+228,Institución A,Atlántico,Arte,0.9,75,18,Bajo,Baja (70-85%),FALSE
+229,Instituto,Bogotá D.c.,Lenguaje,0.4,72,19,Bajo,Baja (70-85%),FALSE
+230,Institución D,Valle Del Cauca,Ciencias,1.2,67,16,Bajo,Crítica (<70%),FALSE
+232,Instituto,Bogotá D.c.,Historia,0.2,98,13,Bajo,Alta (>95%),FALSE
+234,Institución C,Cesar,Historia,5,96,19,Superior,Alta (>95%),TRUE
+235,Institución A,Atlántico,Matemáticas,4.3,52,16,Alto,Crítica (<70%),FALSE
+236,Institución C,Cesar,Historia,2.6,87,6,Bajo,Media (85-95%),FALSE
+237,Institución A,Atlántico,Historia,0.3,52,9,Bajo,Crítica (<70%),FALSE
+239,Institución B,Bolívar,Matemáticas,3,50,24,Básico,Crítica (<70%),FALSE
+242,Institución C,Cesar,Matemáticas,4.5,81,18,Alto,Baja (70-85%),TRUE
+243,Institución A,Atlántico,Arte,3.3,77,19,Básico,Baja (70-85%),FALSE
+244,Institución D,Valle Del Cauca,Arte,4.1,70,15,Alto,Crítica (<70%),FALSE
+245,Institución A,Atlántico,Ciencias,4.4,95,5,Alto,Media (85-95%),TRUE
+246,Institución D,Valle Del Cauca,Lenguaje,2.9,62,25,Bajo,Crítica (<70%),FALSE
+247,Institución A,Atlántico,Lenguaje,2.6,76,7,Bajo,Baja (70-85%),FALSE
+248,Institución E,Antioquia,Matemáticas,2.2,85,21,Bajo,Baja (70-85%),FALSE
+249,Institución D,Valle Del Cauca,Lenguaje,1.6,56,23,Bajo,Crítica (<70%),FALSE
+250,Instituto,Bogotá D.c.,Arte,2.2,71,18,Bajo,Baja (70-85%),FALSE
+251,Instituto,Bogotá D.c.,Ciencias,3.9,59,26,Básico,Crítica (<70%),FALSE
+252,Institución B,Bolívar,Ciencias,3,88,27,Básico,Media (85-95%),TRUE
+253,Institución C,Cesar,Matemáticas,4.5,64,12,Alto,Crítica (<70%),FALSE
+255,Institución A,Atlántico,Matemáticas,3,53,24,Básico,Crítica (<70%),FALSE
+256,Institución C,Cesar,Matemáticas,3.2,81,7,Básico,Baja (70-85%),TRUE
+258,Institución B,Bolívar,Lenguaje,3.5,55,13,Básico,Crítica (<70%),FALSE
+265,Institución B,Bolívar,Matemáticas,4.8,77,29,Superior,Baja (70-85%),FALSE
+266,Institución E,Antioquia,Matemáticas,3,57,12,Básico,Crítica (<70%),FALSE
+267,Institución A,Atlántico,Historia,3.7,50,27,Básico,Crítica (<70%),FALSE
+268,Institución A,Atlántico,Matemáticas,2.5,86,5,Bajo,Media (85-95%),FALSE
+269,Institución E,Antioquia,Ciencias,3.2,71,24,Básico,Baja (70-85%),FALSE
+270,Institución C,Cesar,Lenguaje,0.4,55,16,Bajo,Crítica (<70%),FALSE
+271,Institución D,Valle Del Cauca,Ciencias,1.3,70,27,Bajo,Crítica (<70%),FALSE
+272,Institución C,Cesar,Matemáticas,1.8,81,15,Bajo,Baja (70-85%),FALSE
+273,Institución A,Atlántico,Ciencias,2.4,84,11,Bajo,Baja (70-85%),FALSE
+274,Institución A,Atlántico,Matemáticas,0.2,64,19,Bajo,Crítica (<70%),FALSE
+275,Institución E,Antioquia,Matemáticas,0.7,54,26,Bajo,Crítica (<70%),FALSE
+277,Institución C,Cesar,Matemáticas,4.9,99,15,Superior,Alta (>95%),TRUE
+278,Institución A,Atlántico,Historia,1.7,97,26,Bajo,Alta (>95%),FALSE
+279,Institución E,Antioquia,Ciencias,2.4,55,20,Bajo,Crítica (<70%),FALSE
+280,Instituto,Bogotá D.c.,Matemáticas,1,74,7,Bajo,Baja (70-85%),FALSE
+281,Institución A,Atlántico,Historia,3.1,95,24,Básico,Media (85-95%),TRUE
+282,Institución E,Antioquia,Ciencias,1.4,89,18,Bajo,Media (85-95%),FALSE
+283,Institución C,Cesar,Matemáticas,1,78,7,Bajo,Baja (70-85%),FALSE
+284,Institución A,Atlántico,Historia,2.6,56,5,Bajo,Crítica (<70%),FALSE
+285,Institución D,Valle Del Cauca,Ciencias,0,89,25,Bajo,Media (85-95%),FALSE
+286,Institución E,Antioquia,Ciencias,0,62,19,Bajo,Crítica (<70%),FALSE
+287,Institución B,Bolívar,Ciencias,1.1,87,5,Bajo,Media (85-95%),FALSE
+288,Institución A,Atlántico,Ciencias,0.2,67,21,Bajo,Crítica (<70%),FALSE
+289,Institución C,Cesar,Ciencias,0.5,51,6,Bajo,Crítica (<70%),FALSE
+290,Institución B,Bolívar,Historia,1.7,57,24,Bajo,Crítica (<70%),FALSE
+291,Institución A,Atlántico,Matemáticas,4,60,10,Alto,Crítica (<70%),FALSE
+293,Institución C,Cesar,Lenguaje,2.6,87,20,Bajo,Media (85-95%),FALSE
+294,Instituto,Bogotá D.c.,Matemáticas,1.5,97,23,Bajo,Alta (>95%),FALSE
+296,Institución B,Bolívar,Matemáticas,2,69,7,Bajo,Crítica (<70%),FALSE
+298,Institución B,Bolívar,Historia,3.1,92,9,Básico,Media (85-95%),TRUE
+300,Institución B,Bolívar,Ciencias,1.7,76,16,Bajo,Baja (70-85%),FALSE
+301,Institución A,Atlántico,Lenguaje,2.5,81,24,Bajo,Baja (70-85%),FALSE
+302,Instituto,Bogotá D.c.,Lenguaje,4.4,59,17,Alto,Crítica (<70%),FALSE
+303,Institución A,Atlántico,Ciencias,2.5,52,24,Bajo,Crítica (<70%),FALSE
+304,Institución A,Atlántico,Historia,3.5,94,13,Básico,Media (85-95%),TRUE
+306,Institución B,Bolívar,Historia,0.7,84,8,Bajo,Baja (70-85%),FALSE
+307,Institución B,Bolívar,Historia,1.4,80,23,Bajo,Baja (70-85%),FALSE
+308,Institución C,Cesar,Matemáticas,2,64,26,Bajo,Crítica (<70%),FALSE
+309,Institución B,Bolívar,Ciencias,2.1,65,23,Bajo,Crítica (<70%),FALSE
+310,Institución A,Atlántico,Matemáticas,2.1,62,10,Bajo,Crítica (<70%),FALSE
+311,Instituto,Bogotá D.c.,Ciencias,4.5,98,17,Alto,Alta (>95%),TRUE
+312,Institución B,Bolívar,Lenguaje,3.6,84,15,Básico,Baja (70-85%),TRUE
+314,Institución D,Valle Del Cauca,Ciencias,1.5,70,17,Bajo,Crítica (<70%),FALSE
+315,Institución D,Valle Del Cauca,Ciencias,4.1,60,29,Alto,Crítica (<70%),FALSE
+316,Institución A,Atlántico,Matemáticas,4.8,79,26,Superior,Baja (70-85%),FALSE
+317,Instituto,Bogotá D.c.,Historia,4.1,97,24,Alto,Alta (>95%),TRUE
+319,Institución B,Bolívar,Lenguaje,3.2,71,25,Básico,Baja (70-85%),FALSE
+320,Institución B,Bolívar,Ciencias,0.3,87,17,Bajo,Media (85-95%),FALSE
+321,Institución B,Bolívar,Lenguaje,1.3,80,26,Bajo,Baja (70-85%),FALSE
+322,Institución B,Bolívar,Historia,0.3,63,15,Bajo,Crítica (<70%),FALSE
+324,Institución C,Cesar,Lenguaje,3.4,99,12,Básico,Alta (>95%),TRUE
+325,Institución A,Atlántico,Historia,0.6,98,24,Bajo,Alta (>95%),FALSE
+328,Institución A,Atlántico,Lenguaje,1.8,81,20,Bajo,Baja (70-85%),FALSE
+329,Institución D,Valle Del Cauca,Ciencias,0.6,64,23,Bajo,Crítica (<70%),FALSE
+332,Institución E,Antioquia,Lenguaje,0.4,52,17,Bajo,Crítica (<70%),FALSE
+333,Institución A,Atlántico,Matemáticas,0.4,65,13,Bajo,Crítica (<70%),FALSE
+334,Instituto,Bogotá D.c.,Arte,1.8,54,24,Bajo,Crítica (<70%),FALSE
+335,Institución E,Antioquia,Lenguaje,4.7,70,28,Superior,Crítica (<70%),FALSE
+337,Institución B,Bolívar,Lenguaje,3.4,68,20,Básico,Crítica (<70%),FALSE
+338,Institución D,Valle Del Cauca,Ciencias,1.8,74,11,Bajo,Baja (70-85%),FALSE
+340,Institución D,Valle Del Cauca,Lenguaje,0.1,78,16,Bajo,Baja (70-85%),FALSE
+341,Institución C,Cesar,Matemáticas,3.2,68,19,Básico,Crítica (<70%),FALSE
+342,Institución B,Bolívar,Matemáticas,4.6,92,27,Superior,Media (85-95%),TRUE
+343,Instituto,Bogotá D.c.,Historia,3.1,51,18,Básico,Crítica (<70%),FALSE
+344,Institución D,Valle Del Cauca,Matemáticas,4.4,59,15,Alto,Crítica (<70%),FALSE
+345,Institución B,Bolívar,Arte,3.6,92,14,Básico,Media (85-95%),TRUE
+346,Institución C,Cesar,Ciencias,0.6,74,15,Bajo,Baja (70-85%),FALSE
+347,Institución A,Atlántico,Lenguaje,4.5,69,10,Alto,Crítica (<70%),FALSE
+348,Instituto,Bogotá D.c.,Historia,0.3,97,6,Bajo,Alta (>95%),FALSE
+349,Institución C,Cesar,Arte,2.7,68,15,Bajo,Crítica (<70%),FALSE
+350,Institución B,Bolívar,Historia,0.7,72,23,Bajo,Baja (70-85%),FALSE
+351,Institución E,Antioquia,Historia,0.1,73,10,Bajo,Baja (70-85%),FALSE
+352,Institución E,Antioquia,Lenguaje,2.1,60,18,Bajo,Crítica (<70%),FALSE
+353,Institución B,Bolívar,Ciencias,1.5,95,24,Bajo,Media (85-95%),FALSE
+354,Institución A,Atlántico,Matemáticas,2.4,83,10,Bajo,Baja (70-85%),FALSE
+355,Institución E,Antioquia,Lenguaje,2.9,77,21,Bajo,Baja (70-85%),FALSE
+357,Institución A,Atlántico,Historia,0.6,54,5,Bajo,Crítica (<70%),FALSE
+358,Institución B,Bolívar,Ciencias,2.8,70,7,Bajo,Crítica (<70%),FALSE
+360,Institución A,Atlántico,Ciencias,3.6,99,12,Básico,Alta (>95%),TRUE
+361,Instituto,Bogotá D.c.,Historia,3.3,53,24,Básico,Crítica (<70%),FALSE
+362,Institución E,Antioquia,Ciencias,4.2,98,26,Alto,Alta (>95%),TRUE
+363,Institución A,Atlántico,Ciencias,3.5,91,19,Básico,Media (85-95%),TRUE
+364,Institución B,Bolívar,Historia,2.1,69,28,Bajo,Crítica (<70%),FALSE
+365,Institución E,Antioquia,Matemáticas,3.4,87,11,Básico,Media (85-95%),TRUE
+367,Institución B,Bolívar,Ciencias,1.5,63,11,Bajo,Crítica (<70%),FALSE
+368,Institución C,Cesar,Lenguaje,3.9,60,8,Básico,Crítica (<70%),FALSE
+369,Institución C,Cesar,Lenguaje,2.2,81,29,Bajo,Baja (70-85%),FALSE
+370,Institución E,Antioquia,Ciencias,4,60,16,Alto,Crítica (<70%),FALSE
+372,Institución A,Atlántico,Lenguaje,4.3,76,18,Alto,Baja (70-85%),FALSE
+373,Institución E,Antioquia,Ciencias,4.6,67,16,Superior,Crítica (<70%),FALSE
+374,Institución A,Atlántico,Lenguaje,2.2,72,15,Bajo,Baja (70-85%),FALSE
+375,Institución D,Valle Del Cauca,Arte,1.6,60,23,Bajo,Crítica (<70%),FALSE
+376,Institución E,Antioquia,Matemáticas,2.9,70,25,Bajo,Crítica (<70%),FALSE
+377,Institución E,Antioquia,Lenguaje,1.9,93,9,Bajo,Media (85-95%),FALSE
+378,Institución B,Bolívar,Ciencias,3,54,18,Básico,Crítica (<70%),FALSE
+379,Institución D,Valle Del Cauca,Lenguaje,3.5,72,25,Básico,Baja (70-85%),FALSE
+380,Institución A,Atlántico,Historia,3.4,90,28,Básico,Media (85-95%),TRUE
+381,Institución E,Antioquia,Historia,1.9,74,20,Bajo,Baja (70-85%),FALSE
+382,Institución B,Bolívar,Ciencias,0.8,90,29,Bajo,Media (85-95%),FALSE
+384,Institución E,Antioquia,Historia,0.7,71,29,Bajo,Baja (70-85%),FALSE
+385,Institución D,Valle Del Cauca,Arte,4.5,68,26,Alto,Crítica (<70%),FALSE
+386,Institución B,Bolívar,Arte,1.7,50,26,Bajo,Crítica (<70%),FALSE
+387,Institución D,Valle Del Cauca,Matemáticas,0.8,56,29,Bajo,Crítica (<70%),FALSE
+389,Institución A,Atlántico,Matemáticas,3.2,50,26,Básico,Crítica (<70%),FALSE
+390,Instituto,Bogotá D.c.,Lenguaje,3.2,64,8,Básico,Crítica (<70%),FALSE
+391,Institución E,Antioquia,Historia,1.7,89,15,Bajo,Media (85-95%),FALSE
+393,Instituto,Bogotá D.c.,Historia,2,71,11,Bajo,Baja (70-85%),FALSE
+394,Institución B,Bolívar,Ciencias,1.6,71,18,Bajo,Baja (70-85%),FALSE
+395,Institución B,Bolívar,Historia,3.4,99,15,Básico,Alta (>95%),TRUE
+396,Institución A,Atlántico,Matemáticas,3,96,26,Básico,Alta (>95%),TRUE
+397,Institución D,Valle Del Cauca,Matemáticas,1.8,66,13,Bajo,Crítica (<70%),FALSE
+400,Institución C,Cesar,Ciencias,2.3,63,27,Bajo,Crítica (<70%),FALSE
+401,Institución A,Atlántico,Lenguaje,3.4,99,22,Básico,Alta (>95%),TRUE
+402,Institución A,Atlántico,Arte,0.7,69,15,Bajo,Crítica (<70%),FALSE
+403,Institución C,Cesar,Arte,2.4,99,19,Bajo,Alta (>95%),FALSE
+404,Institución E,Antioquia,Matemáticas,0.1,97,29,Bajo,Alta (>95%),FALSE
+405,Institución C,Cesar,Lenguaje,2.5,82,29,Bajo,Baja (70-85%),FALSE
+406,Institución A,Atlántico,Lenguaje,4.8,92,26,Superior,Media (85-95%),TRUE
+407,Institución A,Atlántico,Historia,1.9,64,23,Bajo,Crítica (<70%),FALSE
+408,Instituto,Bogotá D.c.,Historia,0.2,61,5,Bajo,Crítica (<70%),FALSE
+409,Institución B,Bolívar,Ciencias,0.2,89,8,Bajo,Media (85-95%),FALSE
+410,Institución C,Cesar,Lenguaje,1.9,69,18,Bajo,Crítica (<70%),FALSE
+411,Institución B,Bolívar,Matemáticas,0.8,79,18,Bajo,Baja (70-85%),FALSE
+412,Institución C,Cesar,Ciencias,0.1,87,7,Bajo,Media (85-95%),FALSE
+413,Institución B,Bolívar,Ciencias,3.8,52,21,Básico,Crítica (<70%),FALSE
+415,Instituto,Bogotá D.c.,Matemáticas,1.4,75,20,Bajo,Baja (70-85%),FALSE
+416,Institución B,Bolívar,Arte,4.5,79,18,Alto,Baja (70-85%),FALSE
+417,Institución C,Cesar,Historia,0.6,62,24,Bajo,Crítica (<70%),FALSE
+418,Institución A,Atlántico,Lenguaje,4.8,62,17,Superior,Crítica (<70%),FALSE
+419,Institución B,Bolívar,Matemáticas,1.6,51,19,Bajo,Crítica (<70%),FALSE
+421,Institución E,Antioquia,Matemáticas,3,98,28,Básico,Alta (>95%),TRUE
+422,Institución B,Bolívar,Historia,4.1,87,29,Alto,Media (85-95%),TRUE
+424,Institución D,Valle Del Cauca,Arte,1.4,85,10,Bajo,Baja (70-85%),FALSE
+425,Institución A,Atlántico,Arte,4.8,75,14,Superior,Baja (70-85%),FALSE
+426,Institución E,Antioquia,Arte,1.9,60,19,Bajo,Crítica (<70%),FALSE
+427,Institución A,Atlántico,Matemáticas,1.9,57,25,Bajo,Crítica (<70%),FALSE
+428,Institución D,Valle Del Cauca,Matemáticas,1.7,93,26,Bajo,Media (85-95%),FALSE
+429,Institución E,Antioquia,Lenguaje,2.7,89,24,Bajo,Media (85-95%),FALSE
+430,Institución A,Atlántico,Lenguaje,0.8,92,10,Bajo,Media (85-95%),FALSE
+431,Instituto,Bogotá D.c.,Matemáticas,2.8,71,27,Bajo,Baja (70-85%),FALSE
+432,Institución C,Cesar,Historia,2.7,69,29,Bajo,Crítica (<70%),FALSE
+433,Institución A,Atlántico,Ciencias,3.8,57,14,Básico,Crítica (<70%),FALSE
+434,Institución C,Cesar,Ciencias,4.2,78,11,Alto,Baja (70-85%),FALSE
+436,Institución B,Bolívar,Arte,1.5,75,21,Bajo,Baja (70-85%),FALSE
+437,Institución A,Atlántico,Historia,1.3,79,22,Bajo,Baja (70-85%),FALSE
+438,Institución B,Bolívar,Ciencias,1,66,21,Bajo,Crítica (<70%),FALSE
+439,Instituto,Bogotá D.c.,Matemáticas,0.3,69,13,Bajo,Crítica (<70%),FALSE
+440,Institución B,Bolívar,Historia,1.7,65,14,Bajo,Crítica (<70%),FALSE
+441,Institución E,Antioquia,Lenguaje,1.4,95,14,Bajo,Media (85-95%),FALSE
+442,Institución A,Atlántico,Matemáticas,4.8,92,29,Superior,Media (85-95%),TRUE
+443,Institución B,Bolívar,Arte,2.8,56,11,Bajo,Crítica (<70%),FALSE
+444,Institución B,Bolívar,Arte,1.7,65,20,Bajo,Crítica (<70%),FALSE
+445,Institución A,Atlántico,Arte,2.9,94,22,Bajo,Media (85-95%),FALSE
+446,Institución C,Cesar,Matemáticas,0.7,96,10,Bajo,Alta (>95%),FALSE
+447,Institución A,Atlántico,Matemáticas,2.2,97,24,Bajo,Alta (>95%),FALSE
+448,Institución A,Atlántico,Lenguaje,3.1,76,5,Básico,Baja (70-85%),FALSE
+449,Institución A,Atlántico,Ciencias,2.4,72,5,Bajo,Baja (70-85%),FALSE
+450,Institución D,Valle Del Cauca,Historia,2,73,16,Bajo,Baja (70-85%),FALSE
+451,Institución A,Atlántico,Arte,5,58,25,Superior,Crítica (<70%),FALSE
+453,Institución C,Cesar,Lenguaje,3.1,69,8,Básico,Crítica (<70%),FALSE
+454,Institución A,Atlántico,Ciencias,2.8,86,21,Bajo,Media (85-95%),FALSE
+456,Institución A,Atlántico,Ciencias,1,66,15,Bajo,Crítica (<70%),FALSE
+458,Institución A,Atlántico,Historia,0.2,80,8,Bajo,Baja (70-85%),FALSE
+459,Institución B,Bolívar,Lenguaje,2.4,57,5,Bajo,Crítica (<70%),FALSE
+460,Institución D,Valle Del Cauca,Ciencias,2.7,64,11,Bajo,Crítica (<70%),FALSE
+461,Institución C,Cesar,Historia,1.1,80,22,Bajo,Baja (70-85%),FALSE
+462,Institución E,Antioquia,Matemáticas,4.8,79,13,Superior,Baja (70-85%),FALSE
+463,Institución E,Antioquia,Historia,4.5,95,7,Alto,Media (85-95%),TRUE
+464,Institución C,Cesar,Historia,3.6,69,12,Básico,Crítica (<70%),FALSE
+465,Institución A,Atlántico,Historia,2.7,88,28,Bajo,Media (85-95%),FALSE
+466,Institución D,Valle Del Cauca,Ciencias,4.3,61,23,Alto,Crítica (<70%),FALSE
+467,Institución E,Antioquia,Ciencias,0.7,98,8,Bajo,Alta (>95%),FALSE
+468,Institución D,Valle Del Cauca,Historia,4,66,22,Alto,Crítica (<70%),FALSE
+469,Institución E,Antioquia,Lenguaje,0.6,91,24,Bajo,Media (85-95%),FALSE
+470,Institución B,Bolívar,Ciencias,4,79,15,Alto,Baja (70-85%),FALSE
+471,Institución A,Atlántico,Arte,1.4,78,18,Bajo,Baja (70-85%),FALSE
+472,Institución B,Bolívar,Matemáticas,4.4,68,29,Alto,Crítica (<70%),FALSE
+473,Institución E,Antioquia,Historia,4.7,95,22,Superior,Media (85-95%),TRUE
+474,Institución B,Bolívar,Lenguaje,0.7,60,20,Bajo,Crítica (<70%),FALSE
+475,Institución E,Antioquia,Matemáticas,2.3,83,7,Bajo,Baja (70-85%),FALSE
+476,Institución C,Cesar,Arte,4.9,99,19,Superior,Alta (>95%),TRUE
+477,Institución B,Bolívar,Matemáticas,2.4,56,8,Bajo,Crítica (<70%),FALSE
+478,Institución B,Bolívar,Ciencias,4.3,93,9,Alto,Media (85-95%),TRUE
+479,Institución A,Atlántico,Matemáticas,2.9,83,21,Bajo,Baja (70-85%),FALSE
+480,Institución A,Atlántico,Historia,1.9,69,11,Bajo,Crítica (<70%),FALSE
+482,Institución B,Bolívar,Ciencias,1,87,18,Bajo,Media (85-95%),FALSE
+483,Instituto,Bogotá D.c.,Ciencias,3.8,73,20,Básico,Baja (70-85%),FALSE
+484,Institución A,Atlántico,Ciencias,1.9,59,11,Bajo,Crítica (<70%),FALSE
+485,Institución B,Bolívar,Ciencias,2.6,81,13,Bajo,Baja (70-85%),FALSE
+486,Institución B,Bolívar,Matemáticas,2.5,64,8,Bajo,Crítica (<70%),FALSE
+487,Institución E,Antioquia,Ciencias,2.9,86,26,Bajo,Media (85-95%),FALSE
+488,Institución E,Antioquia,Lenguaje,4.3,69,15,Alto,Crítica (<70%),FALSE
+490,Institución C,Cesar,Matemáticas,2,86,16,Bajo,Media (85-95%),FALSE
+491,Instituto,Bogotá D.c.,Lenguaje,4.1,89,16,Alto,Media (85-95%),TRUE
+494,Institución D,Valle Del Cauca,Matemáticas,4.8,93,25,Superior,Media (85-95%),TRUE
+495,Institución A,Atlántico,Matemáticas,1,72,11,Bajo,Baja (70-85%),FALSE
+496,Institución B,Bolívar,Lenguaje,0.5,89,5,Bajo,Media (85-95%),FALSE
+497,Institución A,Atlántico,Arte,4.3,60,27,Alto,Crítica (<70%),FALSE
+498,Institución D,Valle Del Cauca,Arte,2.2,95,17,Bajo,Media (85-95%),FALSE
+501,Institución C,Cesar,Ciencias,0.3,79,16,Bajo,Baja (70-85%),FALSE
+503,Institución B,Bolívar,Matemáticas,2.2,88,28,Bajo,Media (85-95%),FALSE
+505,Institución B,Bolívar,Matemáticas,3.1,98,23,Básico,Alta (>95%),TRUE
+509,Instituto,Bogotá D.c.,Arte,3.4,85,29,Básico,Baja (70-85%),TRUE
+511,Institución B,Bolívar,Historia,3.5,75,5,Básico,Baja (70-85%),FALSE
+512,Institución A,Atlántico,Ciencias,0.7,71,14,Bajo,Baja (70-85%),FALSE
+513,Institución C,Cesar,Matemáticas,1.5,53,9,Bajo,Crítica (<70%),FALSE
+514,Institución A,Atlántico,Historia,1.8,80,16,Bajo,Baja (70-85%),FALSE
+515,Institución A,Atlántico,Matemáticas,4,67,26,Alto,Crítica (<70%),FALSE
+516,Institución A,Atlántico,Lenguaje,1.4,87,11,Bajo,Media (85-95%),FALSE
+517,Instituto,Bogotá D.c.,Matemáticas,1.1,73,13,Bajo,Baja (70-85%),FALSE
+518,Institución A,Atlántico,Ciencias,4.8,72,26,Superior,Baja (70-85%),FALSE
+522,Institución E,Antioquia,Lenguaje,4.1,60,5,Alto,Crítica (<70%),FALSE
+524,Institución E,Antioquia,Lenguaje,0.1,95,25,Bajo,Media (85-95%),FALSE
+525,Institución E,Antioquia,Matemáticas,3.7,81,19,Básico,Baja (70-85%),TRUE
+526,Institución D,Valle Del Cauca,Historia,4.2,54,6,Alto,Crítica (<70%),FALSE
+528,Institución C,Cesar,Arte,0.7,59,11,Bajo,Crítica (<70%),FALSE
+529,Institución D,Valle Del Cauca,Matemáticas,3.8,89,25,Básico,Media (85-95%),TRUE
+530,Institución A,Atlántico,Ciencias,3.8,95,16,Básico,Media (85-95%),TRUE
+531,Institución B,Bolívar,Historia,3.3,73,26,Básico,Baja (70-85%),FALSE
+532,Institución A,Atlántico,Arte,3.8,84,22,Básico,Baja (70-85%),TRUE
+533,Institución A,Atlántico,Lenguaje,4.2,93,7,Alto,Media (85-95%),TRUE
+535,Institución E,Antioquia,Matemáticas,0.4,72,15,Bajo,Baja (70-85%),FALSE
+538,Institución C,Cesar,Lenguaje,2,80,10,Bajo,Baja (70-85%),FALSE
+539,Institución B,Bolívar,Matemáticas,2,80,9,Bajo,Baja (70-85%),FALSE
+540,Institución A,Atlántico,Ciencias,0.3,91,5,Bajo,Media (85-95%),FALSE
+541,Instituto,Bogotá D.c.,Lenguaje,1.7,91,16,Bajo,Media (85-95%),FALSE
+543,Instituto,Bogotá D.c.,Ciencias,4,58,8,Alto,Crítica (<70%),FALSE
+544,Institución E,Antioquia,Ciencias,4.7,71,22,Superior,Baja (70-85%),FALSE
+546,Institución D,Valle Del Cauca,Lenguaje,4.8,74,21,Superior,Baja (70-85%),FALSE
+547,Instituto,Bogotá D.c.,Arte,2.6,97,6,Bajo,Alta (>95%),FALSE
+548,Institución B,Bolívar,Ciencias,1.5,67,28,Bajo,Crítica (<70%),FALSE
+549,Institución E,Antioquia,Lenguaje,0.4,61,26,Bajo,Crítica (<70%),FALSE
+550,Institución A,Atlántico,Ciencias,2.5,89,6,Bajo,Media (85-95%),FALSE
+551,Institución D,Valle Del Cauca,Matemáticas,4,66,16,Alto,Crítica (<70%),FALSE
+553,Institución A,Atlántico,Ciencias,0.3,91,14,Bajo,Media (85-95%),FALSE
+555,Institución A,Atlántico,Arte,2,64,27,Bajo,Crítica (<70%),FALSE
+556,Institución E,Antioquia,Ciencias,1.5,88,29,Bajo,Media (85-95%),FALSE
+557,Institución D,Valle Del Cauca,Arte,1.2,62,25,Bajo,Crítica (<70%),FALSE
+558,Institución C,Cesar,Historia,1.4,66,27,Bajo,Crítica (<70%),FALSE
+560,Institución B,Bolívar,Matemáticas,4.6,58,18,Superior,Crítica (<70%),FALSE
+561,Institución C,Cesar,Ciencias,2,89,11,Bajo,Media (85-95%),FALSE
+562,Institución E,Antioquia,Arte,4.5,69,23,Alto,Crítica (<70%),FALSE
+563,Institución A,Atlántico,Historia,1.6,75,27,Bajo,Baja (70-85%),FALSE
+564,Institución B,Bolívar,Historia,2.4,76,21,Bajo,Baja (70-85%),FALSE
+565,Instituto,Bogotá D.c.,Arte,1.1,70,13,Bajo,Crítica (<70%),FALSE
+567,Institución E,Antioquia,Historia,4.9,62,26,Superior,Crítica (<70%),FALSE
+568,Institución B,Bolívar,Lenguaje,3,65,9,Básico,Crítica (<70%),FALSE
+569,Instituto,Bogotá D.c.,Historia,1.8,58,27,Bajo,Crítica (<70%),FALSE
+570,Institución A,Atlántico,Arte,3.2,61,9,Básico,Crítica (<70%),FALSE
+572,Institución A,Atlántico,Lenguaje,4.4,87,25,Alto,Media (85-95%),TRUE
+573,Institución B,Bolívar,Ciencias,2.5,68,14,Bajo,Crítica (<70%),FALSE
+574,Institución A,Atlántico,Historia,2.2,56,11,Bajo,Crítica (<70%),FALSE
+575,Institución E,Antioquia,Arte,2.9,84,19,Bajo,Baja (70-85%),FALSE
+576,Institución A,Atlántico,Historia,3.1,97,11,Básico,Alta (>95%),TRUE
+578,Institución A,Atlántico,Lenguaje,3.4,65,7,Básico,Crítica (<70%),FALSE
+579,Institución A,Atlántico,Ciencias,1.2,88,23,Bajo,Media (85-95%),FALSE
+580,Institución B,Bolívar,Historia,3.6,53,14,Básico,Crítica (<70%),FALSE
+581,Institución A,Atlántico,Ciencias,4.1,74,19,Alto,Baja (70-85%),FALSE
+582,Institución C,Cesar,Ciencias,4,81,7,Alto,Baja (70-85%),TRUE
+583,Institución A,Atlántico,Matemáticas,2.8,89,10,Bajo,Media (85-95%),FALSE
+584,Institución E,Antioquia,Historia,2.6,62,16,Bajo,Crítica (<70%),FALSE
+585,Institución B,Bolívar,Ciencias,0.7,94,19,Bajo,Media (85-95%),FALSE
+587,Institución A,Atlántico,Historia,1.4,98,17,Bajo,Alta (>95%),FALSE
+588,Institución E,Antioquia,Ciencias,2.5,86,23,Bajo,Media (85-95%),FALSE
+589,Institución E,Antioquia,Historia,1.4,55,7,Bajo,Crítica (<70%),FALSE
+591,Institución C,Cesar,Lenguaje,3.1,62,12,Básico,Crítica (<70%),FALSE
+592,Institución E,Antioquia,Matemáticas,0.3,75,27,Bajo,Baja (70-85%),FALSE
+593,Institución B,Bolívar,Ciencias,3.7,63,24,Básico,Crítica (<70%),FALSE
+594,Institución E,Antioquia,Ciencias,1.6,80,19,Bajo,Baja (70-85%),FALSE
+595,Institución E,Antioquia,Lenguaje,0,53,8,Bajo,Crítica (<70%),FALSE
+596,Institución E,Antioquia,Historia,2.6,88,23,Bajo,Media (85-95%),FALSE
+597,Institución C,Cesar,Historia,0.2,57,25,Bajo,Crítica (<70%),FALSE
+598,Institución A,Atlántico,Historia,1.4,74,7,Bajo,Baja (70-85%),FALSE
+599,Institución E,Antioquia,Matemáticas,3.5,62,17,Básico,Crítica (<70%),FALSE
+600,Institución A,Atlántico,Historia,0.3,81,12,Bajo,Baja (70-85%),FALSE
+601,Institución A,Atlántico,Matemáticas,4.2,87,27,Alto,Media (85-95%),TRUE
+602,Institución C,Cesar,Matemáticas,0,87,20,Bajo,Media (85-95%),FALSE
+603,Institución D,Valle Del Cauca,Lenguaje,1.2,77,17,Bajo,Baja (70-85%),FALSE
+604,Institución A,Atlántico,Ciencias,3.7,79,7,Básico,Baja (70-85%),FALSE
+605,Institución A,Atlántico,Historia,1.6,52,20,Bajo,Crítica (<70%),FALSE
+606,Instituto,Bogotá D.c.,Matemáticas,0.5,77,13,Bajo,Baja (70-85%),FALSE
+607,Institución B,Bolívar,Matemáticas,1.8,52,18,Bajo,Crítica (<70%),FALSE
+608,Instituto,Bogotá D.c.,Arte,1.4,94,17,Bajo,Media (85-95%),FALSE
+609,Institución B,Bolívar,Matemáticas,4.2,83,25,Alto,Baja (70-85%),TRUE
+613,Institución C,Cesar,Ciencias,2.2,87,11,Bajo,Media (85-95%),FALSE
+614,Institución B,Bolívar,Lenguaje,4.5,57,10,Alto,Crítica (<70%),FALSE
+615,Institución A,Atlántico,Ciencias,1.9,57,6,Bajo,Crítica (<70%),FALSE
+617,Institución E,Antioquia,Ciencias,0.4,63,26,Bajo,Crítica (<70%),FALSE
+618,Institución A,Atlántico,Lenguaje,3.4,81,28,Básico,Baja (70-85%),TRUE
+619,Institución A,Atlántico,Lenguaje,2.5,84,21,Bajo,Baja (70-85%),FALSE
+620,Institución B,Bolívar,Matemáticas,1.9,59,9,Bajo,Crítica (<70%),FALSE
+621,Institución E,Antioquia,Ciencias,3.2,52,16,Básico,Crítica (<70%),FALSE
+622,Institución E,Antioquia,Arte,3.5,61,5,Básico,Crítica (<70%),FALSE
+623,Institución B,Bolívar,Historia,0,98,14,Bajo,Alta (>95%),FALSE
+624,Institución C,Cesar,Ciencias,0.8,80,15,Bajo,Baja (70-85%),FALSE
+625,Institución B,Bolívar,Lenguaje,3.6,78,20,Básico,Baja (70-85%),FALSE
+627,Institución B,Bolívar,Historia,4.8,74,12,Superior,Baja (70-85%),FALSE
+629,Institución B,Bolívar,Ciencias,4.8,80,21,Superior,Baja (70-85%),FALSE
+631,Institución B,Bolívar,Ciencias,1.5,69,22,Bajo,Crítica (<70%),FALSE
+632,Institución C,Cesar,Lenguaje,0.5,88,16,Bajo,Media (85-95%),FALSE
+633,Institución B,Bolívar,Historia,3.9,71,29,Básico,Baja (70-85%),FALSE
+634,Institución D,Valle Del Cauca,Ciencias,3.2,53,21,Básico,Crítica (<70%),FALSE
+635,Institución A,Atlántico,Matemáticas,0.2,62,18,Bajo,Crítica (<70%),FALSE
+637,Institución A,Atlántico,Ciencias,4.8,91,18,Superior,Media (85-95%),TRUE
+638,Instituto,Bogotá D.c.,Arte,2.5,99,13,Bajo,Alta (>95%),FALSE
+639,Institución B,Bolívar,Matemáticas,2.2,98,8,Bajo,Alta (>95%),FALSE
+640,Institución C,Cesar,Lenguaje,2.3,69,29,Bajo,Crítica (<70%),FALSE
+641,Institución A,Atlántico,Ciencias,1,62,27,Bajo,Crítica (<70%),FALSE
+642,Institución E,Antioquia,Matemáticas,1.8,66,15,Bajo,Crítica (<70%),FALSE
+643,Institución D,Valle Del Cauca,Historia,1.8,85,10,Bajo,Baja (70-85%),FALSE
+644,Instituto,Bogotá D.c.,Arte,0.3,82,19,Bajo,Baja (70-85%),FALSE
+645,Institución A,Atlántico,Matemáticas,3.8,50,9,Básico,Crítica (<70%),FALSE
+646,Institución A,Atlántico,Matemáticas,2.1,64,15,Bajo,Crítica (<70%),FALSE
+647,Institución D,Valle Del Cauca,Arte,4.1,62,29,Alto,Crítica (<70%),FALSE
+648,Instituto,Bogotá D.c.,Lenguaje,4.3,66,22,Alto,Crítica (<70%),FALSE
+649,Institución E,Antioquia,Historia,1.1,73,17,Bajo,Baja (70-85%),FALSE
+650,Institución B,Bolívar,Ciencias,3.3,57,15,Básico,Crítica (<70%),FALSE
+654,Institución C,Cesar,Ciencias,3.4,72,23,Básico,Baja (70-85%),FALSE
+655,Institución A,Atlántico,Lenguaje,3,95,28,Básico,Media (85-95%),TRUE
+656,Institución B,Bolívar,Historia,1.5,57,19,Bajo,Crítica (<70%),FALSE
+657,Institución B,Bolívar,Arte,0.7,57,13,Bajo,Crítica (<70%),FALSE
+659,Instituto,Bogotá D.c.,Lenguaje,3.7,96,24,Básico,Alta (>95%),TRUE
+660,Institución D,Valle Del Cauca,Ciencias,1.6,62,5,Bajo,Crítica (<70%),FALSE
+661,Instituto,Bogotá D.c.,Matemáticas,3.2,88,8,Básico,Media (85-95%),TRUE
+662,Institución D,Valle Del Cauca,Historia,2,86,18,Bajo,Media (85-95%),FALSE
+664,Institución A,Atlántico,Matemáticas,1,77,6,Bajo,Baja (70-85%),FALSE
+665,Institución C,Cesar,Historia,4.5,74,20,Alto,Baja (70-85%),FALSE
+666,Institución C,Cesar,Lenguaje,1.4,65,7,Bajo,Crítica (<70%),FALSE
+667,Institución B,Bolívar,Lenguaje,1.8,51,12,Bajo,Crítica (<70%),FALSE
+668,Institución C,Cesar,Historia,0.3,67,10,Bajo,Crítica (<70%),FALSE
+669,Institución C,Cesar,Ciencias,0.6,66,20,Bajo,Crítica (<70%),FALSE
+670,Institución E,Antioquia,Matemáticas,2.6,79,28,Bajo,Baja (70-85%),FALSE
+671,Institución E,Antioquia,Ciencias,1.3,88,20,Bajo,Media (85-95%),FALSE
+672,Institución B,Bolívar,Historia,4.2,62,11,Alto,Crítica (<70%),FALSE
+674,Institución E,Antioquia,Lenguaje,1.9,99,17,Bajo,Alta (>95%),FALSE
+676,Institución A,Atlántico,Matemáticas,0.1,95,29,Bajo,Media (85-95%),FALSE
+677,Institución E,Antioquia,Historia,0.6,79,24,Bajo,Baja (70-85%),FALSE
+678,Institución A,Atlántico,Lenguaje,2.1,67,26,Bajo,Crítica (<70%),FALSE
+680,Institución A,Atlántico,Lenguaje,2,92,19,Bajo,Media (85-95%),FALSE
+681,Institución A,Atlántico,Matemáticas,2.7,70,22,Bajo,Crítica (<70%),FALSE
+682,Institución A,Atlántico,Matemáticas,3,79,6,Básico,Baja (70-85%),FALSE
+685,Instituto,Bogotá D.c.,Historia,4.8,66,17,Superior,Crítica (<70%),FALSE
+686,Institución A,Atlántico,Matemáticas,2.6,89,22,Bajo,Media (85-95%),FALSE
+687,Institución D,Valle Del Cauca,Ciencias,3.4,68,19,Básico,Crítica (<70%),FALSE
+688,Institución A,Atlántico,Arte,1.6,64,16,Bajo,Crítica (<70%),FALSE
+689,Instituto,Bogotá D.c.,Arte,3.9,58,19,Básico,Crítica (<70%),FALSE
+690,Institución A,Atlántico,Lenguaje,3.9,59,17,Básico,Crítica (<70%),FALSE
+691,Institución C,Cesar,Matemáticas,2.6,93,22,Bajo,Media (85-95%),FALSE
+692,Institución D,Valle Del Cauca,Lenguaje,4.9,80,19,Superior,Baja (70-85%),FALSE
+693,Instituto,Bogotá D.c.,Ciencias,0.6,72,29,Bajo,Baja (70-85%),FALSE
+695,Institución B,Bolívar,Matemáticas,3.9,82,15,Básico,Baja (70-85%),TRUE
+696,Instituto,Bogotá D.c.,Ciencias,4,58,23,Alto,Crítica (<70%),FALSE
+697,Institución B,Bolívar,Lenguaje,0.6,96,7,Bajo,Alta (>95%),FALSE
+698,Instituto,Bogotá D.c.,Matemáticas,1.3,50,11,Bajo,Crítica (<70%),FALSE
+699,Institución C,Cesar,Matemáticas,0.1,93,25,Bajo,Media (85-95%),FALSE
+700,Institución B,Bolívar,Ciencias,1.5,84,18,Bajo,Baja (70-85%),FALSE
+701,Institución C,Cesar,Historia,3.9,60,18,Básico,Crítica (<70%),FALSE
+702,Institución B,Bolívar,Ciencias,2.6,83,26,Bajo,Baja (70-85%),FALSE
+703,Institución B,Bolívar,Matemáticas,1.7,65,17,Bajo,Crítica (<70%),FALSE
+705,Institución C,Cesar,Lenguaje,0,81,28,Bajo,Baja (70-85%),FALSE
+706,Institución C,Cesar,Ciencias,1.5,64,13,Bajo,Crítica (<70%),FALSE
+707,Institución A,Atlántico,Historia,3.2,61,5,Básico,Crítica (<70%),FALSE
+708,Institución B,Bolívar,Historia,4.9,82,23,Superior,Baja (70-85%),TRUE
+709,Institución E,Antioquia,Lenguaje,4.2,94,15,Alto,Media (85-95%),TRUE
+710,Institución B,Bolívar,Matemáticas,0.1,63,27,Bajo,Crítica (<70%),FALSE
+711,Institución A,Atlántico,Ciencias,4.5,57,26,Alto,Crítica (<70%),FALSE
+712,Institución A,Atlántico,Historia,3.9,57,27,Básico,Crítica (<70%),FALSE
+713,Institución B,Bolívar,Arte,3.9,76,28,Básico,Baja (70-85%),FALSE
+715,Institución A,Atlántico,Historia,2,50,23,Bajo,Crítica (<70%),FALSE
+716,Institución A,Atlántico,Ciencias,1.5,92,22,Bajo,Media (85-95%),FALSE
+718,Institución A,Atlántico,Historia,1.1,91,27,Bajo,Media (85-95%),FALSE
+719,Institución D,Valle Del Cauca,Matemáticas,1.2,60,5,Bajo,Crítica (<70%),FALSE
+720,Institución C,Cesar,Lenguaje,2.4,88,23,Bajo,Media (85-95%),FALSE
+721,Institución A,Atlántico,Historia,3.7,92,24,Básico,Media (85-95%),TRUE
+722,Institución B,Bolívar,Lenguaje,2.4,80,21,Bajo,Baja (70-85%),FALSE
+723,Institución D,Valle Del Cauca,Historia,0.3,66,9,Bajo,Crítica (<70%),FALSE
+725,Institución B,Bolívar,Lenguaje,4.7,81,6,Superior,Baja (70-85%),TRUE
+726,Instituto,Bogotá D.c.,Matemáticas,3.9,78,7,Básico,Baja (70-85%),FALSE
+727,Instituto,Bogotá D.c.,Arte,5,70,12,Superior,Crítica (<70%),FALSE
+728,Institución A,Atlántico,Historia,2.7,70,20,Bajo,Crítica (<70%),FALSE
+729,Institución C,Cesar,Lenguaje,4.8,89,10,Superior,Media (85-95%),TRUE
+730,Institución A,Atlántico,Lenguaje,0.4,72,17,Bajo,Baja (70-85%),FALSE
+731,Institución E,Antioquia,Matemáticas,1.8,55,27,Bajo,Crítica (<70%),FALSE
+733,Institución D,Valle Del Cauca,Arte,1,99,26,Bajo,Alta (>95%),FALSE
+734,Institución B,Bolívar,Historia,0.7,87,20,Bajo,Media (85-95%),FALSE
+735,Instituto,Bogotá D.c.,Matemáticas,3.1,86,20,Básico,Media (85-95%),TRUE
+737,Institución E,Antioquia,Ciencias,2.9,57,17,Bajo,Crítica (<70%),FALSE
+738,Institución A,Atlántico,Lenguaje,0.7,90,18,Bajo,Media (85-95%),FALSE
+739,Institución A,Atlántico,Historia,4.1,98,12,Alto,Alta (>95%),TRUE
+740,Institución E,Antioquia,Matemáticas,3.2,84,16,Básico,Baja (70-85%),TRUE
+742,Institución E,Antioquia,Matemáticas,3.4,73,27,Básico,Baja (70-85%),FALSE
+745,Institución B,Bolívar,Historia,4.6,51,12,Superior,Crítica (<70%),FALSE
+746,Institución D,Valle Del Cauca,Matemáticas,1.5,89,25,Bajo,Media (85-95%),FALSE
+747,Instituto,Bogotá D.c.,Historia,2.3,68,29,Bajo,Crítica (<70%),FALSE
+748,Institución B,Bolívar,Ciencias,4.5,88,13,Alto,Media (85-95%),TRUE
+749,Institución A,Atlántico,Ciencias,3.5,77,5,Básico,Baja (70-85%),FALSE
+751,Institución C,Cesar,Arte,0.7,55,27,Bajo,Crítica (<70%),FALSE
+752,Institución C,Cesar,Ciencias,0,68,23,Bajo,Crítica (<70%),FALSE
+755,Institución D,Valle Del Cauca,Matemáticas,0.7,51,15,Bajo,Crítica (<70%),FALSE
+756,Instituto,Bogotá D.c.,Lenguaje,4.8,87,27,Superior,Media (85-95%),TRUE
+758,Institución B,Bolívar,Historia,1.2,53,15,Bajo,Crítica (<70%),FALSE
+759,Institución D,Valle Del Cauca,Ciencias,2.5,71,22,Bajo,Baja (70-85%),FALSE
+760,Institución D,Valle Del Cauca,Historia,3.4,75,27,Básico,Baja (70-85%),FALSE
+763,Institución A,Atlántico,Matemáticas,4,85,25,Alto,Baja (70-85%),TRUE
+764,Instituto,Bogotá D.c.,Lenguaje,2.3,62,29,Bajo,Crítica (<70%),FALSE
+766,Institución C,Cesar,Matemáticas,2.2,66,27,Bajo,Crítica (<70%),FALSE
+767,Institución A,Atlántico,Arte,0.2,90,17,Bajo,Media (85-95%),FALSE
+768,Institución B,Bolívar,Historia,0.8,85,16,Bajo,Baja (70-85%),FALSE
+769,Instituto,Bogotá D.c.,Ciencias,2.2,95,22,Bajo,Media (85-95%),FALSE
+770,Institución C,Cesar,Matemáticas,1,68,28,Bajo,Crítica (<70%),FALSE
+771,Institución E,Antioquia,Ciencias,0.2,84,23,Bajo,Baja (70-85%),FALSE
+774,Institución D,Valle Del Cauca,Lenguaje,4,77,23,Alto,Baja (70-85%),FALSE
+775,Institución C,Cesar,Lenguaje,4.3,50,14,Alto,Crítica (<70%),FALSE
+776,Institución D,Valle Del Cauca,Ciencias,1.2,91,11,Bajo,Media (85-95%),FALSE
+777,Institución A,Atlántico,Matemáticas,4.8,67,22,Superior,Crítica (<70%),FALSE
+778,Institución D,Valle Del Cauca,Lenguaje,1,97,20,Bajo,Alta (>95%),FALSE
+779,Institución A,Atlántico,Historia,4.8,89,24,Superior,Media (85-95%),TRUE
+780,Institución A,Atlántico,Historia,5,82,10,Superior,Baja (70-85%),TRUE
+782,Institución E,Antioquia,Arte,4.9,57,25,Superior,Crítica (<70%),FALSE
+783,Institución D,Valle Del Cauca,Lenguaje,2.8,73,17,Bajo,Baja (70-85%),FALSE
+784,Institución C,Cesar,Ciencias,1.3,65,29,Bajo,Crítica (<70%),FALSE
+785,Institución A,Atlántico,Ciencias,2.2,99,25,Bajo,Alta (>95%),FALSE
+787,Institución B,Bolívar,Ciencias,0.4,87,20,Bajo,Media (85-95%),FALSE
+788,Instituto,Bogotá D.c.,Historia,3.1,93,17,Básico,Media (85-95%),TRUE
+789,Institución E,Antioquia,Ciencias,4.9,76,17,Superior,Baja (70-85%),FALSE
+790,Institución B,Bolívar,Ciencias,1,58,21,Bajo,Crítica (<70%),FALSE
+792,Instituto,Bogotá D.c.,Ciencias,4.5,65,24,Alto,Crítica (<70%),FALSE
+794,Institución D,Valle Del Cauca,Matemáticas,4.8,80,26,Superior,Baja (70-85%),FALSE
+795,Institución A,Atlántico,Matemáticas,2.6,73,25,Bajo,Baja (70-85%),FALSE
+796,Institución E,Antioquia,Historia,4.9,63,21,Superior,Crítica (<70%),FALSE
+797,Institución A,Atlántico,Matemáticas,3.8,94,13,Básico,Media (85-95%),TRUE
+798,Institución A,Atlántico,Matemáticas,0.8,74,6,Bajo,Baja (70-85%),FALSE
+799,Institución A,Atlántico,Historia,2.4,83,29,Bajo,Baja (70-85%),FALSE
+800,Instituto,Bogotá D.c.,Lenguaje,3.6,52,22,Básico,Crítica (<70%),FALSE
+803,Institución C,Cesar,Matemáticas,3.3,58,15,Básico,Crítica (<70%),FALSE
+805,Institución E,Antioquia,Arte,2.8,69,10,Bajo,Crítica (<70%),FALSE
+806,Institución B,Bolívar,Ciencias,3.9,89,10,Básico,Media (85-95%),TRUE
+807,Institución E,Antioquia,Lenguaje,2.5,59,17,Bajo,Crítica (<70%),FALSE
+808,Instituto,Bogotá D.c.,Arte,0.1,68,15,Bajo,Crítica (<70%),FALSE
+809,Institución A,Atlántico,Ciencias,0,52,18,Bajo,Crítica (<70%),FALSE
+810,Institución B,Bolívar,Historia,1.8,73,6,Bajo,Baja (70-85%),FALSE
+812,Institución C,Cesar,Historia,1.1,52,7,Bajo,Crítica (<70%),FALSE
+813,Institución A,Atlántico,Historia,3.2,76,27,Básico,Baja (70-85%),FALSE
+814,Instituto,Bogotá D.c.,Ciencias,1.1,65,25,Bajo,Crítica (<70%),FALSE
+816,Instituto,Bogotá D.c.,Ciencias,4.2,64,5,Alto,Crítica (<70%),FALSE
+817,Institución A,Atlántico,Historia,3.6,84,28,Básico,Baja (70-85%),TRUE
+818,Institución E,Antioquia,Lenguaje,0.5,61,23,Bajo,Crítica (<70%),FALSE
+819,Institución C,Cesar,Lenguaje,2.1,90,22,Bajo,Media (85-95%),FALSE
+820,Institución E,Antioquia,Arte,0.1,93,21,Bajo,Media (85-95%),FALSE
+821,Institución E,Antioquia,Lenguaje,2.4,75,24,Bajo,Baja (70-85%),FALSE
+822,Institución E,Antioquia,Ciencias,3.3,96,28,Básico,Alta (>95%),TRUE
+823,Institución C,Cesar,Ciencias,0.6,83,17,Bajo,Baja (70-85%),FALSE
+825,Institución A,Atlántico,Ciencias,2,80,5,Bajo,Baja (70-85%),FALSE
+826,Institución A,Atlántico,Ciencias,4.6,99,8,Superior,Alta (>95%),TRUE
+827,Institución B,Bolívar,Lenguaje,5,69,29,Superior,Crítica (<70%),FALSE
+829,Instituto,Bogotá D.c.,Historia,3.8,72,21,Básico,Baja (70-85%),FALSE
+830,Institución B,Bolívar,Lenguaje,1.9,53,15,Bajo,Crítica (<70%),FALSE
+832,Institución C,Cesar,Lenguaje,3.8,97,29,Básico,Alta (>95%),TRUE
+835,Institución B,Bolívar,Lenguaje,2.9,74,23,Bajo,Baja (70-85%),FALSE
+836,Institución A,Atlántico,Historia,1.8,51,27,Bajo,Crítica (<70%),FALSE
+837,Institución A,Atlántico,Matemáticas,3.9,79,23,Básico,Baja (70-85%),FALSE
+838,Institución A,Atlántico,Historia,1.3,52,29,Bajo,Crítica (<70%),FALSE
+839,Institución A,Atlántico,Historia,2.8,70,20,Bajo,Crítica (<70%),FALSE
+840,Institución B,Bolívar,Historia,1.8,74,26,Bajo,Baja (70-85%),FALSE
+841,Institución B,Bolívar,Lenguaje,3.3,69,23,Básico,Crítica (<70%),FALSE
+842,Institución E,Antioquia,Matemáticas,1.2,98,13,Bajo,Alta (>95%),FALSE
+843,Instituto,Bogotá D.c.,Arte,1,71,5,Bajo,Baja (70-85%),FALSE
+844,Instituto,Bogotá D.c.,Historia,4.6,70,14,Superior,Crítica (<70%),FALSE
+845,Institución C,Cesar,Historia,0.5,82,23,Bajo,Baja (70-85%),FALSE
+846,Institución B,Bolívar,Historia,2.5,87,5,Bajo,Media (85-95%),FALSE
+847,Institución C,Cesar,Historia,1.1,64,6,Bajo,Crítica (<70%),FALSE
+850,Institución C,Cesar,Ciencias,0.9,95,12,Bajo,Media (85-95%),FALSE
+851,Institución B,Bolívar,Arte,4.3,74,27,Alto,Baja (70-85%),FALSE
+852,Institución C,Cesar,Historia,1.4,70,22,Bajo,Crítica (<70%),FALSE
+853,Instituto,Bogotá D.c.,Lenguaje,4.8,73,6,Superior,Baja (70-85%),FALSE
+854,Institución D,Valle Del Cauca,Historia,2.9,54,29,Bajo,Crítica (<70%),FALSE
+855,Institución A,Atlántico,Matemáticas,2.2,55,17,Bajo,Crítica (<70%),FALSE
+856,Institución D,Valle Del Cauca,Historia,2.9,98,10,Bajo,Alta (>95%),FALSE
+857,Institución B,Bolívar,Arte,2.6,92,25,Bajo,Media (85-95%),FALSE
+858,Institución D,Valle Del Cauca,Matemáticas,3.8,97,10,Básico,Alta (>95%),TRUE
+860,Institución A,Atlántico,Historia,1.8,96,20,Bajo,Alta (>95%),FALSE
+861,Institución A,Atlántico,Ciencias,4.5,72,15,Alto,Baja (70-85%),FALSE
+862,Institución E,Antioquia,Arte,4.7,53,11,Superior,Crítica (<70%),FALSE
+863,Institución B,Bolívar,Matemáticas,4.5,76,14,Alto,Baja (70-85%),FALSE
+864,Institución A,Atlántico,Matemáticas,2.1,67,14,Bajo,Crítica (<70%),FALSE
+865,Institución D,Valle Del Cauca,Arte,3.9,70,29,Básico,Crítica (<70%),FALSE
+867,Institución B,Bolívar,Historia,2.5,84,22,Bajo,Baja (70-85%),FALSE
+868,Institución E,Antioquia,Ciencias,1,71,28,Bajo,Baja (70-85%),FALSE
+869,Institución A,Atlántico,Lenguaje,3,89,24,Básico,Media (85-95%),TRUE
+872,Institución D,Valle Del Cauca,Matemáticas,4.3,89,8,Alto,Media (85-95%),TRUE
+873,Instituto,Bogotá D.c.,Arte,1,99,12,Bajo,Alta (>95%),FALSE
+874,Institución D,Valle Del Cauca,Ciencias,0.4,59,13,Bajo,Crítica (<70%),FALSE
+875,Instituto,Bogotá D.c.,Ciencias,0.3,74,17,Bajo,Baja (70-85%),FALSE
+876,Instituto,Bogotá D.c.,Arte,4.7,98,13,Superior,Alta (>95%),TRUE
+877,Institución E,Antioquia,Arte,2.5,57,8,Bajo,Crítica (<70%),FALSE
+878,Institución D,Valle Del Cauca,Ciencias,2,60,21,Bajo,Crítica (<70%),FALSE
+879,Institución B,Bolívar,Arte,4.1,54,20,Alto,Crítica (<70%),FALSE
+880,Institución C,Cesar,Historia,4.2,94,19,Alto,Media (85-95%),TRUE
+881,Institución C,Cesar,Matemáticas,1.7,86,7,Bajo,Media (85-95%),FALSE
+882,Institución D,Valle Del Cauca,Lenguaje,3.5,94,29,Básico,Media (85-95%),TRUE
+883,Institución D,Valle Del Cauca,Matemáticas,3.9,87,24,Básico,Media (85-95%),TRUE
+884,Institución E,Antioquia,Arte,3.3,78,9,Básico,Baja (70-85%),FALSE
+885,Institución D,Valle Del Cauca,Historia,0.8,54,27,Bajo,Crítica (<70%),FALSE
+886,Instituto,Bogotá D.c.,Historia,4.4,58,9,Alto,Crítica (<70%),FALSE
+889,Instituto,Bogotá D.c.,Historia,2.1,50,22,Bajo,Crítica (<70%),FALSE
+890,Institución B,Bolívar,Ciencias,0.2,89,19,Bajo,Media (85-95%),FALSE
+891,Instituto,Bogotá D.c.,Historia,0.6,79,6,Bajo,Baja (70-85%),FALSE
+892,Institución B,Bolívar,Ciencias,3.8,60,17,Básico,Crítica (<70%),FALSE
+893,Institución A,Atlántico,Lenguaje,0,77,8,Bajo,Baja (70-85%),FALSE
+894,Institución A,Atlántico,Lenguaje,2.1,93,14,Bajo,Media (85-95%),FALSE
+896,Institución D,Valle Del Cauca,Historia,0.3,88,14,Bajo,Media (85-95%),FALSE
+897,Institución D,Valle Del Cauca,Matemáticas,4.9,75,13,Superior,Baja (70-85%),FALSE
+898,Institución E,Antioquia,Ciencias,1.1,62,12,Bajo,Crítica (<70%),FALSE
+899,Instituto,Bogotá D.c.,Arte,1.5,57,7,Bajo,Crítica (<70%),FALSE
+900,Institución E,Antioquia,Ciencias,1.5,77,20,Bajo,Baja (70-85%),FALSE
+901,Instituto,Bogotá D.c.,Matemáticas,1.2,79,18,Bajo,Baja (70-85%),FALSE
+903,Institución A,Atlántico,Matemáticas,3.6,88,25,Básico,Media (85-95%),TRUE
+907,Institución A,Atlántico,Matemáticas,3.7,83,14,Básico,Baja (70-85%),TRUE
+909,Institución B,Bolívar,Matemáticas,2.1,74,8,Bajo,Baja (70-85%),FALSE
+910,Institución A,Atlántico,Ciencias,1.5,61,28,Bajo,Crítica (<70%),FALSE
+911,Institución E,Antioquia,Ciencias,1.6,50,17,Bajo,Crítica (<70%),FALSE
+912,Institución E,Antioquia,Ciencias,3.6,71,16,Básico,Baja (70-85%),FALSE
+913,Institución D,Valle Del Cauca,Lenguaje,4.1,89,9,Alto,Media (85-95%),TRUE
+915,Institución B,Bolívar,Historia,1.9,96,28,Bajo,Alta (>95%),FALSE
+916,Institución A,Atlántico,Ciencias,4.5,50,13,Alto,Crítica (<70%),FALSE
+917,Institución A,Atlántico,Lenguaje,4,50,24,Alto,Crítica (<70%),FALSE
+919,Institución B,Bolívar,Lenguaje,3.8,91,6,Básico,Media (85-95%),TRUE
+920,Institución C,Cesar,Matemáticas,2,70,26,Bajo,Crítica (<70%),FALSE
+921,Instituto,Bogotá D.c.,Matemáticas,3,64,28,Básico,Crítica (<70%),FALSE
+922,Institución E,Antioquia,Historia,3.3,66,27,Básico,Crítica (<70%),FALSE
+923,Institución A,Atlántico,Lenguaje,0.4,71,11,Bajo,Baja (70-85%),FALSE
+924,Institución E,Antioquia,Lenguaje,2.7,87,12,Bajo,Media (85-95%),FALSE
+925,Institución A,Atlántico,Arte,3.5,84,11,Básico,Baja (70-85%),TRUE
+926,Institución D,Valle Del Cauca,Matemáticas,0.8,94,25,Bajo,Media (85-95%),FALSE
+927,Institución A,Atlántico,Historia,3.9,65,27,Básico,Crítica (<70%),FALSE
+928,Institución E,Antioquia,Arte,2.9,57,18,Bajo,Crítica (<70%),FALSE
+929,Institución A,Atlántico,Lenguaje,4.8,96,23,Superior,Alta (>95%),TRUE
+930,Institución C,Cesar,Lenguaje,0.2,66,9,Bajo,Crítica (<70%),FALSE
+932,Institución A,Atlántico,Historia,3,75,29,Básico,Baja (70-85%),FALSE
+934,Institución B,Bolívar,Lenguaje,3.6,66,24,Básico,Crítica (<70%),FALSE
+935,Institución B,Bolívar,Lenguaje,3.8,87,16,Básico,Media (85-95%),TRUE
+936,Institución B,Bolívar,Lenguaje,0.5,66,27,Bajo,Crítica (<70%),FALSE
+937,Institución B,Bolívar,Lenguaje,2.6,97,21,Bajo,Alta (>95%),FALSE
+938,Institución A,Atlántico,Matemáticas,2.5,63,17,Bajo,Crítica (<70%),FALSE
+939,Institución C,Cesar,Arte,1.8,94,6,Bajo,Media (85-95%),FALSE
+941,Instituto,Bogotá D.c.,Arte,4.1,84,17,Alto,Baja (70-85%),TRUE
+942,Institución A,Atlántico,Lenguaje,3.5,95,11,Básico,Media (85-95%),TRUE
+943,Institución B,Bolívar,Ciencias,3.6,63,14,Básico,Crítica (<70%),FALSE
+944,Institución D,Valle Del Cauca,Historia,2.3,96,27,Bajo,Alta (>95%),FALSE
+946,Institución E,Antioquia,Lenguaje,3.5,64,7,Básico,Crítica (<70%),FALSE
+947,Instituto,Bogotá D.c.,Historia,3.6,76,7,Básico,Baja (70-85%),FALSE
+948,Institución A,Atlántico,Lenguaje,4.3,62,22,Alto,Crítica (<70%),FALSE
+949,Institución A,Atlántico,Lenguaje,1.4,98,15,Bajo,Alta (>95%),FALSE
+951,Institución B,Bolívar,Arte,1,84,24,Bajo,Baja (70-85%),FALSE
+952,Institución E,Antioquia,Arte,1.7,55,9,Bajo,Crítica (<70%),FALSE
+953,Institución A,Atlántico,Matemáticas,1.7,54,23,Bajo,Crítica (<70%),FALSE
+954,Institución B,Bolívar,Lenguaje,4.9,71,26,Superior,Baja (70-85%),FALSE
+955,Institución A,Atlántico,Ciencias,4.3,98,23,Alto,Alta (>95%),TRUE
+956,Institución D,Valle Del Cauca,Matemáticas,3.5,72,19,Básico,Baja (70-85%),FALSE
+957,Institución A,Atlántico,Matemáticas,3.6,74,20,Básico,Baja (70-85%),FALSE
+958,Institución A,Atlántico,Lenguaje,2.8,83,28,Bajo,Baja (70-85%),FALSE
+959,Institución D,Valle Del Cauca,Lenguaje,4.7,75,13,Superior,Baja (70-85%),FALSE
+962,Instituto,Bogotá D.c.,Ciencias,0.8,75,29,Bajo,Baja (70-85%),FALSE
+963,Institución A,Atlántico,Ciencias,3.9,69,16,Básico,Crítica (<70%),FALSE
+964,Institución B,Bolívar,Lenguaje,3.7,55,27,Básico,Crítica (<70%),FALSE
+965,Institución A,Atlántico,Matemáticas,1.9,55,7,Bajo,Crítica (<70%),FALSE
+966,Institución B,Bolívar,Historia,0.1,99,27,Bajo,Alta (>95%),FALSE
+967,Institución C,Cesar,Historia,4.2,67,18,Alto,Crítica (<70%),FALSE
+971,Instituto,Bogotá D.c.,Ciencias,2.2,63,8,Bajo,Crítica (<70%),FALSE
+972,Institución C,Cesar,Historia,1.2,62,11,Bajo,Crítica (<70%),FALSE
+973,Institución B,Bolívar,Ciencias,3.5,56,23,Básico,Crítica (<70%),FALSE
+974,Institución A,Atlántico,Ciencias,4.1,93,21,Alto,Media (85-95%),TRUE
+975,Institución C,Cesar,Arte,2.7,64,29,Bajo,Crítica (<70%),FALSE
+976,Institución B,Bolívar,Historia,4.8,68,20,Superior,Crítica (<70%),FALSE
+977,Institución B,Bolívar,Lenguaje,0.3,92,19,Bajo,Media (85-95%),FALSE
+979,Institución A,Atlántico,Matemáticas,3.6,93,12,Básico,Media (85-95%),TRUE
+980,Institución B,Bolívar,Arte,4.3,84,23,Alto,Baja (70-85%),TRUE
+982,Institución C,Cesar,Ciencias,4,84,22,Alto,Baja (70-85%),TRUE
+983,Institución D,Valle Del Cauca,Matemáticas,2.8,68,20,Bajo,Crítica (<70%),FALSE
+984,Institución A,Atlántico,Lenguaje,2,69,24,Bajo,Crítica (<70%),FALSE
+985,Instituto,Bogotá D.c.,Ciencias,0.7,85,23,Bajo,Baja (70-85%),FALSE
+986,Institución B,Bolívar,Historia,4.3,84,14,Alto,Baja (70-85%),TRUE
+989,Institución C,Cesar,Lenguaje,1.5,93,17,Bajo,Media (85-95%),FALSE
+990,Institución B,Bolívar,Ciencias,4.4,89,11,Alto,Media (85-95%),TRUE
+992,Institución B,Bolívar,Ciencias,4,66,6,Alto,Crítica (<70%),FALSE
+993,Institución B,Bolívar,Matemáticas,1.3,56,8,Bajo,Crítica (<70%),FALSE
+994,Institución B,Bolívar,Historia,3.1,92,29,Básico,Media (85-95%),TRUE
+995,Institución B,Bolívar,Historia,2.9,99,10,Bajo,Alta (>95%),FALSE
+996,Instituto,Bogotá D.c.,Arte,4.2,50,28,Alto,Crítica (<70%),FALSE
+997,Institución A,Atlántico,Lenguaje,4.5,84,22,Alto,Baja (70-85%),TRUE
+998,Institución A,Atlántico,Matemáticas,0.1,81,27,Bajo,Baja (70-85%),FALSE
+999,Institución B,Bolívar,Lenguaje,3.4,85,10,Básico,Baja (70-85%),TRUE
+1000,Institución C,Cesar,Arte,0.3,62,29,Bajo,Crítica (<70%),FALSE
+1001,Instituto,Bogotá D.c.,Lenguaje,2.7,55,27,Bajo,Crítica (<70%),FALSE
+1002,Institución B,Bolívar,Ciencias,1.4,63,21,Bajo,Crítica (<70%),FALSE
+1003,Instituto,Bogotá D.c.,Historia,1.5,86,18,Bajo,Media (85-95%),FALSE
+1005,Institución A,Atlántico,Matemáticas,3.1,64,15,Básico,Crítica (<70%),FALSE
+1007,Institución C,Cesar,Ciencias,3.7,53,6,Básico,Crítica (<70%),FALSE
+1008,Institución C,Cesar,Arte,2,89,7,Bajo,Media (85-95%),FALSE
+1009,Institución A,Atlántico,Arte,0.3,65,15,Bajo,Crítica (<70%),FALSE
+1010,Instituto,Bogotá D.c.,Lenguaje,3.9,77,10,Básico,Baja (70-85%),FALSE
+1011,Institución B,Bolívar,Lenguaje,1.4,65,18,Bajo,Crítica (<70%),FALSE
+1012,Institución C,Cesar,Historia,2.2,53,23,Bajo,Crítica (<70%),FALSE
+1013,Instituto,Bogotá D.c.,Historia,3.4,94,20,Básico,Media (85-95%),TRUE
+1014,Instituto,Bogotá D.c.,Matemáticas,1.7,75,25,Bajo,Baja (70-85%),FALSE
+1015,Institución D,Valle Del Cauca,Matemáticas,0.3,77,26,Bajo,Baja (70-85%),FALSE
+1017,Institución E,Antioquia,Matemáticas,4.7,94,11,Superior,Media (85-95%),TRUE
+1019,Institución E,Antioquia,Ciencias,3.4,80,23,Básico,Baja (70-85%),FALSE
+1020,Institución B,Bolívar,Arte,3.2,52,24,Básico,Crítica (<70%),FALSE
+1021,Institución B,Bolívar,Historia,1,57,20,Bajo,Crítica (<70%),FALSE
+1022,Institución B,Bolívar,Ciencias,2.1,73,26,Bajo,Baja (70-85%),FALSE
+1023,Institución B,Bolívar,Lenguaje,3.8,64,11,Básico,Crítica (<70%),FALSE
+1024,Institución A,Atlántico,Historia,0.5,92,13,Bajo,Media (85-95%),FALSE
+1025,Institución B,Bolívar,Lenguaje,1.4,80,17,Bajo,Baja (70-85%),FALSE
+1026,Institución E,Antioquia,Matemáticas,1.4,58,5,Bajo,Crítica (<70%),FALSE
+1027,Institución C,Cesar,Arte,2.2,88,12,Bajo,Media (85-95%),FALSE
+1028,Institución C,Cesar,Matemáticas,4.9,94,28,Superior,Media (85-95%),TRUE
+1029,Institución D,Valle Del Cauca,Lenguaje,0.3,51,26,Bajo,Crítica (<70%),FALSE
+1030,Institución B,Bolívar,Lenguaje,2.6,57,8,Bajo,Crítica (<70%),FALSE
+1031,Institución B,Bolívar,Matemáticas,0.9,56,7,Bajo,Crítica (<70%),FALSE
+1032,Institución A,Atlántico,Lenguaje,4.9,93,7,Superior,Media (85-95%),TRUE
+1033,Institución E,Antioquia,Historia,0.6,88,26,Bajo,Media (85-95%),FALSE
+1034,Institución D,Valle Del Cauca,Historia,2,91,17,Bajo,Media (85-95%),FALSE
+1036,Institución C,Cesar,Arte,3.5,84,11,Básico,Baja (70-85%),TRUE
+1037,Institución B,Bolívar,Lenguaje,2.1,79,5,Bajo,Baja (70-85%),FALSE
+1038,Institución B,Bolívar,Ciencias,1.7,59,20,Bajo,Crítica (<70%),FALSE
+1039,Institución D,Valle Del Cauca,Ciencias,2,87,10,Bajo,Media (85-95%),FALSE
+1040,Institución E,Antioquia,Lenguaje,1.3,67,11,Bajo,Crítica (<70%),FALSE
+1041,Institución E,Antioquia,Matemáticas,1,99,16,Bajo,Alta (>95%),FALSE
+1043,Institución A,Atlántico,Lenguaje,1.3,78,13,Bajo,Baja (70-85%),FALSE
+1044,Institución B,Bolívar,Matemáticas,1.4,88,15,Bajo,Media (85-95%),FALSE
+1045,Institución E,Antioquia,Historia,3.3,83,14,Básico,Baja (70-85%),TRUE
+1046,Institución C,Cesar,Lenguaje,4.8,92,25,Superior,Media (85-95%),TRUE
+1047,Institución D,Valle Del Cauca,Lenguaje,3,94,5,Básico,Media (85-95%),TRUE
+1049,Instituto,Bogotá D.c.,Ciencias,0.4,54,8,Bajo,Crítica (<70%),FALSE
+1051,Instituto,Bogotá D.c.,Ciencias,1.5,55,13,Bajo,Crítica (<70%),FALSE
+1052,Institución B,Bolívar,Arte,0.5,95,21,Bajo,Media (85-95%),FALSE
+1053,Institución A,Atlántico,Historia,3,93,7,Básico,Media (85-95%),TRUE
+1054,Institución B,Bolívar,Ciencias,3.1,53,20,Básico,Crítica (<70%),FALSE
+1057,Institución A,Atlántico,Historia,0.1,55,7,Bajo,Crítica (<70%),FALSE
+1058,Instituto,Bogotá D.c.,Historia,4.8,81,24,Superior,Baja (70-85%),TRUE
+1059,Institución B,Bolívar,Matemáticas,1.3,91,19,Bajo,Media (85-95%),FALSE
+1060,Institución A,Atlántico,Ciencias,3.4,67,7,Básico,Crítica (<70%),FALSE
+1061,Institución B,Bolívar,Ciencias,3.5,64,24,Básico,Crítica (<70%),FALSE
+1062,Institución A,Atlántico,Ciencias,3.1,89,18,Básico,Media (85-95%),TRUE
+1066,Institución B,Bolívar,Ciencias,4.3,59,24,Alto,Crítica (<70%),FALSE
+1067,Institución B,Bolívar,Arte,4.7,69,27,Superior,Crítica (<70%),FALSE
+1070,Institución B,Bolívar,Lenguaje,4.7,52,26,Superior,Crítica (<70%),FALSE
+1071,Institución E,Antioquia,Historia,3.7,91,18,Básico,Media (85-95%),TRUE
+1072,Institución D,Valle Del Cauca,Matemáticas,4.4,60,22,Alto,Crítica (<70%),FALSE
+1073,Institución A,Atlántico,Lenguaje,1,92,19,Bajo,Media (85-95%),FALSE
+1075,Institución B,Bolívar,Arte,3.5,81,10,Básico,Baja (70-85%),TRUE
+1076,Institución A,Atlántico,Ciencias,3.4,53,19,Básico,Crítica (<70%),FALSE
+1077,Institución E,Antioquia,Historia,2,53,22,Bajo,Crítica (<70%),FALSE
+1078,Institución A,Atlántico,Historia,0.1,66,8,Bajo,Crítica (<70%),FALSE
+1080,Institución B,Bolívar,Ciencias,1.3,68,12,Bajo,Crítica (<70%),FALSE
+1081,Institución E,Antioquia,Lenguaje,2.3,54,19,Bajo,Crítica (<70%),FALSE
+1083,Institución E,Antioquia,Lenguaje,2,71,19,Bajo,Baja (70-85%),FALSE
+1084,Institución A,Atlántico,Ciencias,4.2,55,17,Alto,Crítica (<70%),FALSE
+1086,Instituto,Bogotá D.c.,Matemáticas,3.4,71,6,Básico,Baja (70-85%),FALSE
+1087,Institución B,Bolívar,Arte,4.9,50,28,Superior,Crítica (<70%),FALSE
+1088,Institución A,Atlántico,Matemáticas,0.5,69,12,Bajo,Crítica (<70%),FALSE
+1089,Institución E,Antioquia,Lenguaje,0,71,24,Bajo,Baja (70-85%),FALSE
+1090,Institución B,Bolívar,Historia,2.2,97,21,Bajo,Alta (>95%),FALSE
+1091,Institución A,Atlántico,Arte,0.5,60,17,Bajo,Crítica (<70%),FALSE
+1092,Institución E,Antioquia,Ciencias,3.7,62,5,Básico,Crítica (<70%),FALSE
+1093,Institución B,Bolívar,Matemáticas,4.6,91,6,Superior,Media (85-95%),TRUE
+1096,Institución C,Cesar,Historia,2.2,61,18,Bajo,Crítica (<70%),FALSE
+1097,Institución E,Antioquia,Matemáticas,3.6,72,29,Básico,Baja (70-85%),FALSE
+1098,Institución D,Valle Del Cauca,Historia,0,63,6,Bajo,Crítica (<70%),FALSE
+1099,Institución C,Cesar,Historia,2.9,82,22,Bajo,Baja (70-85%),FALSE
+1100,Institución E,Antioquia,Historia,3.1,67,26,Básico,Crítica (<70%),FALSE
+1101,Instituto,Bogotá D.c.,Lenguaje,3.2,98,11,Básico,Alta (>95%),TRUE
+1102,Institución D,Valle Del Cauca,Lenguaje,1.2,90,27,Bajo,Media (85-95%),FALSE
+1103,Institución A,Atlántico,Arte,3.6,58,29,Básico,Crítica (<70%),FALSE
+1104,Institución B,Bolívar,Ciencias,0.5,72,10,Bajo,Baja (70-85%),FALSE
+1105,Instituto,Bogotá D.c.,Historia,1,59,18,Bajo,Crítica (<70%),FALSE
+1106,Institución C,Cesar,Historia,4.4,68,12,Alto,Crítica (<70%),FALSE
+1108,Institución B,Bolívar,Lenguaje,0.1,54,6,Bajo,Crítica (<70%),FALSE
+1109,Institución B,Bolívar,Lenguaje,1.2,96,21,Bajo,Alta (>95%),FALSE
+1110,Instituto,Bogotá D.c.,Ciencias,1.1,72,9,Bajo,Baja (70-85%),FALSE
+1113,Institución E,Antioquia,Lenguaje,0.3,77,28,Bajo,Baja (70-85%),FALSE
+1114,Instituto,Bogotá D.c.,Matemáticas,2.3,83,24,Bajo,Baja (70-85%),FALSE
+1115,Institución A,Atlántico,Lenguaje,3.7,94,25,Básico,Media (85-95%),TRUE
+1116,Institución D,Valle Del Cauca,Matemáticas,3,97,25,Básico,Alta (>95%),TRUE
+1117,Institución D,Valle Del Cauca,Lenguaje,3.4,96,26,Básico,Alta (>95%),TRUE
+1118,Institución C,Cesar,Ciencias,0.4,74,7,Bajo,Baja (70-85%),FALSE
+1119,Institución C,Cesar,Matemáticas,4.8,59,9,Superior,Crítica (<70%),FALSE
+1120,Institución D,Valle Del Cauca,Arte,4.2,63,20,Alto,Crítica (<70%),FALSE
+1121,Institución A,Atlántico,Historia,4,91,22,Alto,Media (85-95%),TRUE
+1122,Institución B,Bolívar,Lenguaje,4.1,95,21,Alto,Media (85-95%),TRUE
+1123,Institución A,Atlántico,Historia,4.7,79,15,Superior,Baja (70-85%),FALSE
+1124,Institución B,Bolívar,Historia,2.7,90,21,Bajo,Media (85-95%),FALSE
+1125,Institución E,Antioquia,Matemáticas,1,74,20,Bajo,Baja (70-85%),FALSE
+1126,Institución A,Atlántico,Historia,3.1,63,27,Básico,Crítica (<70%),FALSE
+1127,Institución A,Atlántico,Matemáticas,3.7,84,6,Básico,Baja (70-85%),TRUE
+1128,Instituto,Bogotá D.c.,Ciencias,3.7,97,8,Básico,Alta (>95%),TRUE
+1129,Institución A,Atlántico,Historia,2.6,83,25,Bajo,Baja (70-85%),FALSE
+1130,Institución A,Atlántico,Matemáticas,0.3,59,11,Bajo,Crítica (<70%),FALSE
+1132,Instituto,Bogotá D.c.,Matemáticas,4.6,60,10,Superior,Crítica (<70%),FALSE
+1133,Institución A,Atlántico,Matemáticas,2.9,60,21,Bajo,Crítica (<70%),FALSE
+1134,Institución B,Bolívar,Matemáticas,2.7,70,11,Bajo,Crítica (<70%),FALSE
+1135,Institución C,Cesar,Matemáticas,1.3,70,29,Bajo,Crítica (<70%),FALSE
+1136,Institución C,Cesar,Historia,1.8,71,9,Bajo,Baja (70-85%),FALSE
+1137,Institución B,Bolívar,Historia,4.5,94,9,Alto,Media (85-95%),TRUE
+1138,Institución E,Antioquia,Matemáticas,3.3,56,24,Básico,Crítica (<70%),FALSE
+1139,Institución C,Cesar,Historia,3.9,66,20,Básico,Crítica (<70%),FALSE
+1141,Institución B,Bolívar,Ciencias,3.2,61,13,Básico,Crítica (<70%),FALSE
+1142,Institución C,Cesar,Arte,1.2,91,9,Bajo,Media (85-95%),FALSE
+1144,Institución A,Atlántico,Historia,2.1,60,13,Bajo,Crítica (<70%),FALSE
+1145,Institución A,Atlántico,Ciencias,2.2,65,9,Bajo,Crítica (<70%),FALSE
+1146,Institución A,Atlántico,Ciencias,3.2,98,14,Básico,Alta (>95%),TRUE
+1147,Institución B,Bolívar,Lenguaje,4.7,67,29,Superior,Crítica (<70%),FALSE
+1148,Institución A,Atlántico,Matemáticas,0.3,84,6,Bajo,Baja (70-85%),FALSE
+1149,Instituto,Bogotá D.c.,Matemáticas,4.1,75,13,Alto,Baja (70-85%),FALSE
+1150,Institución C,Cesar,Matemáticas,1.5,65,15,Bajo,Crítica (<70%),FALSE
+1151,Instituto,Bogotá D.c.,Matemáticas,2.2,55,8,Bajo,Crítica (<70%),FALSE
+1152,Institución E,Antioquia,Lenguaje,0.1,93,26,Bajo,Media (85-95%),FALSE
+1153,Institución A,Atlántico,Arte,1.5,92,26,Bajo,Media (85-95%),FALSE
+1154,Institución B,Bolívar,Lenguaje,2.5,96,26,Bajo,Alta (>95%),FALSE
+1155,Institución E,Antioquia,Ciencias,0.3,96,6,Bajo,Alta (>95%),FALSE
+1158,Instituto,Bogotá D.c.,Lenguaje,0.5,61,18,Bajo,Crítica (<70%),FALSE
+1159,Institución A,Atlántico,Arte,3.8,62,5,Básico,Crítica (<70%),FALSE
+1160,Institución B,Bolívar,Arte,2,53,22,Bajo,Crítica (<70%),FALSE
+1161,Institución A,Atlántico,Historia,3.3,88,11,Básico,Media (85-95%),TRUE
+1162,Institución A,Atlántico,Matemáticas,1.3,51,5,Bajo,Crítica (<70%),FALSE
+1163,Institución B,Bolívar,Arte,0.8,75,5,Bajo,Baja (70-85%),FALSE
+1164,Institución A,Atlántico,Ciencias,0.8,76,5,Bajo,Baja (70-85%),FALSE
+1165,Institución B,Bolívar,Arte,0.4,76,28,Bajo,Baja (70-85%),FALSE
+1166,Institución E,Antioquia,Historia,0.9,64,8,Bajo,Crítica (<70%),FALSE
+1168,Institución B,Bolívar,Ciencias,4.4,56,22,Alto,Crítica (<70%),FALSE
+1169,Institución E,Antioquia,Historia,4.1,96,15,Alto,Alta (>95%),TRUE
+1170,Institución B,Bolívar,Historia,3.4,95,5,Básico,Media (85-95%),TRUE
+1171,Institución A,Atlántico,Historia,0.6,89,14,Bajo,Media (85-95%),FALSE
+1172,Institución C,Cesar,Ciencias,1.4,61,13,Bajo,Crítica (<70%),FALSE
+1173,Instituto,Bogotá D.c.,Lenguaje,1.5,62,27,Bajo,Crítica (<70%),FALSE
+1174,Institución B,Bolívar,Matemáticas,1.2,92,8,Bajo,Media (85-95%),FALSE
+1175,Institución B,Bolívar,Lenguaje,2.6,66,10,Bajo,Crítica (<70%),FALSE
+1177,Institución D,Valle Del Cauca,Historia,1.8,85,6,Bajo,Baja (70-85%),FALSE
+1178,Institución B,Bolívar,Matemáticas,1.8,70,27,Bajo,Crítica (<70%),FALSE
+1180,Institución B,Bolívar,Matemáticas,3.9,54,14,Básico,Crítica (<70%),FALSE
+1182,Institución A,Atlántico,Historia,4.6,65,28,Superior,Crítica (<70%),FALSE
+1183,Instituto,Bogotá D.c.,Lenguaje,4.8,85,21,Superior,Baja (70-85%),TRUE
+1185,Institución B,Bolívar,Historia,1.8,78,28,Bajo,Baja (70-85%),FALSE
+1186,Institución C,Cesar,Arte,2.5,96,22,Bajo,Alta (>95%),FALSE
+1187,Institución E,Antioquia,Lenguaje,4.7,61,26,Superior,Crítica (<70%),FALSE
+1188,Instituto,Bogotá D.c.,Ciencias,4.4,86,17,Alto,Media (85-95%),TRUE
+1189,Institución B,Bolívar,Matemáticas,0.5,79,21,Bajo,Baja (70-85%),FALSE
+1190,Institución B,Bolívar,Historia,2,72,9,Bajo,Baja (70-85%),FALSE
+1191,Institución B,Bolívar,Lenguaje,2.8,65,15,Bajo,Crítica (<70%),FALSE
+1192,Instituto,Bogotá D.c.,Historia,2.5,63,11,Bajo,Crítica (<70%),FALSE
+1193,Institución A,Atlántico,Lenguaje,1,59,14,Bajo,Crítica (<70%),FALSE
+1194,Institución D,Valle Del Cauca,Ciencias,4.3,56,21,Alto,Crítica (<70%),FALSE
+1200,Institución B,Bolívar,Historia,0,85,6,Bajo,Baja (70-85%),FALSE
