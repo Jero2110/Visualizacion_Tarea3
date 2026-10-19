@@ -18,7 +18,7 @@
 
 paquetes <- c(
   "tidyverse","plotly", "corrplot", "ggplot2",
-  "readxl", "janitor", "skimr", "naniar", "dplyr"
+  "readxl", "janitor", "skimr", "naniar", "dplyr", "here"
 )
 
 # Revisamos todos los paquetes que no se encuentran en la lista y los instalamos
@@ -28,7 +28,7 @@ if (length(nuevos) > 0) install.packages(nuevos)
 # Con esta linea importamos las librerias en el entorno de trabajo
 invisible(lapply(paquetes, library, character.only = TRUE))
 
-source("D:/Jeronimo/02. Estudios/02. Posgrado/01. UNAD - Maestría en Ciencia de Datos/04. Sem 3/03. Visualización/03. Fase 03/app/studentsResults/R/funciones_graficos.R")
+source(here::here("app", "studentsResults", "R", "funciones_graficos.R"))
 
 # Creamos las rutas con las salidas de los gráficos y de los datos procesados
 dir.create("salidas/datos",    recursive = TRUE, showWarnings = FALSE)
@@ -36,7 +36,7 @@ dir.create("salidas/datos",    recursive = TRUE, showWarnings = FALSE)
 # ---- 1. CARGA Y EXPLORACIÓN INICIAL -----------------------------------------
 
 # Cargamos los datos crudos
-ruta_data <- "D:/Jeronimo/02. Estudios/02. Posgrado/01. UNAD - Maestría en Ciencia de Datos/04. Sem 3/03. Visualización/03. Fase 03/data/dataset fase 3.txt"
+ruta_data <- here::here("data","dataset fase 3.txt")
 datos_raw <- read_csv(ruta_data, locale = locale(encoding = "ISO-8859-1"),
                       show_col_types = FALSE) %>%
   clean_names()          # nombres en minúscula y sin espacios/tildes
@@ -52,9 +52,9 @@ config_columnas <- c(
 )
 
 # Cargamos los datos de las instituciones
-localizacion_instituciones <- read_excel("D:/Jeronimo/02. Estudios/02. Posgrado/01. UNAD - Maestría en Ciencia de Datos/04. Sem 3/03. Visualización/03. Fase 03/data/instituciones educativas y ubicacion.xlsx")
+localizacion_instituciones <- read_excel(here::here("data","instituciones educativas y ubicacion.xlsx"))
 
-coordenadas_departamentos <- read_csv("D:/Jeronimo/02. Estudios/02. Posgrado/01. UNAD - Maestría en Ciencia de Datos/04. Sem 3/03. Visualización/03. Fase 03/data/departamentos_colombia.csv",
+coordenadas_departamentos <- read_csv(here::here("data","departamentos_colombia.csv"),
                                       show_col_types = FALSE,
                                       locale = locale(encoding = "UTF-8"))
 
@@ -175,7 +175,6 @@ datos_limpios <- datos_unidos %>%
       breaks = c(-Inf, 70, 85, 95, Inf),
       labels = c("Crítica (<70%)", "Baja (70-85%)", "Media (85-95%)", "Alta (>95%)")
     ),
-    clave_depto = normalizar_departamento(departamento),
     aprueba = calificacion >= 3.0 & asistencia > 80
   )
 
@@ -190,7 +189,8 @@ datos_limpios <- datos_limpios %>%
 # Variables clave
 vars_clave <- c("id_estudiante", "institucion", "departamento",
                 "asignatura", "calificacion", "asistencia",
-                "n_actividades", "nivel_desempeno", "categoria_asistencia", "aprueba")
+                "n_actividades", "nivel_desempeno", "categoria_asistencia", "aprueba",
+                "latitud", "longitud")
 datos_clave <- datos_limpios %>% select(all_of(vars_clave))
 
 cat("\nRegistros antes:", nrow(datos_unidos), "| después de limpiar:", nrow(datos_clave), "\n")
@@ -248,7 +248,7 @@ corrplot(cor(mat_cor, use = "complete.obs"), method = "color", addCoef.col = "bl
 dev.off()
 
 # ---- 5. EXPORTAR DATOS PARA EL DASHBOARD ------------------------------------
-write_csv(datos_clave,         "D:/Jeronimo/02. Estudios/02. Posgrado/01. UNAD - Maestría en Ciencia de Datos/04. Sem 3/03. Visualización/03. Fase 03/app/studentsResults/salidas/datos/datos_limpios.csv")
+write_csv(datos_clave,         here::here("app", "studentsResults", "salidas", "datos", "datos_limpios.csv"))
 write_csv(resumen_institucion, "salidas/datos/resumen_institucion.csv")
 write_csv(resumen_asignatura,  "salidas/datos/resumen_asignatura.csv")
 write_csv(resumen_departamento,   "salidas/datos/resumen_departamento.csv")

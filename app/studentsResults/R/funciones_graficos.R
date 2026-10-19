@@ -62,7 +62,7 @@ resumen_instituciones <- function(df) {
 # Resumen por departamento, con las coordenadas de referencia para el mapa
 resumen_departamentos <- function(df) {
   df |>
-    dplyr::group_by(departamento) |>
+    dplyr::group_by(departamento, latitud, longitud) |>
     dplyr::summarise(
       departamento    = dplyr::first(departamento),
       n_instituciones = dplyr::n_distinct(institucion),
@@ -339,7 +339,7 @@ grafico_waffle <- function(df, filas = 10, columnas = 10) {
 mapa_departamentos <- function(df, indicador = "calificacion") {
   dep <- resumen_departamentos(df) |> dplyr::filter(!is.na(latitud), !is.na(longitud))
   base <- leaflet::leaflet() |>
-    leaflet::addProviderTiles(leaflet::providers$CartoDB.Positron) |>
+    leaflet::addTiles() |>
     leaflet::setView(lng = -74.3, lat = 4.6, zoom = 5)
   if (nrow(dep) == 0) return(base)
   

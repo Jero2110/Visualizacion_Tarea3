@@ -5,10 +5,16 @@
 # =============================================================================
 
 library(bslib)
+library(shiny)
+library(leaflet)
 
 # ---- Datos (se leen una sola vez al iniciar la app) -------------------------
-datos   <- cargar_datos("D:/Jeronimo/02. Estudios/02. Posgrado/01. UNAD - Maestría en Ciencia de Datos/04. Sem 3/03. Visualización/03. Fase 03/app/studentsResults/salidas/datos/datos_limpios.csv")
+datos   <- cargar_datos(here::here("app", "studentsResults", "salidas", "datos", "datos_limpios.csv"))
 es_demo <- isTRUE(attr(datos, "es_demo"))
+
+print("--- VERIFICANDO COLUMNAS EN SHINY ---")
+print(colnames(datos)) 
+print("-------------------------------------")
 
 departamentos <- sort(unique(datos$departamento))
 instituciones <- sort(unique(datos$institucion))
@@ -313,11 +319,11 @@ server <- function(input, output, session) {
   # ---- Datos ----
   output$tabla_datos <- DT::renderDT({
     d <- datos_f(); hay_datos(d)
-    DT::datatable(select(d, -texto_actividad, -departamento), rownames = FALSE, filter = "top",
+    DT::datatable(select(d, -departamento), rownames = FALSE, filter = "top",
                   options = list(pageLength = 15, scrollX = TRUE))
   })
   output$descargar <- downloadHandler(
-    filename = function() paste0("datos_filtrados_", Sys.Date(), ".csv"),
+    filename = function() paste0("datos_limpios_", Sys.Date(), ".csv"),
     content  = function(file) readr::write_csv(select(datos_f(), -departamento), file)
   )
 }
